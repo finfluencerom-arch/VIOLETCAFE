@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Violet Cafebar &amp; Lounge · Cafenea în Lotus Center, Oradea</title>
-<meta name="description" content="Violet Cafebar & Lounge, Lotus Center Oradea. Cafea dimineața, limonadă la prânz, spritz seara. Afară e luni. Înăuntru e mov.">
+<meta name="description" content="Violet Cafebar & Lounge, locul tău preferat din Lotus. Cafea, limonade signature și cocktailuri, zilnic 9:00–22:00, la parter în Lotus Center Oradea.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Violet Cafebar &amp; Lounge">
 <meta property="og:title" content="Violet Cafebar &amp; Lounge · Lotus Center, Oradea">
-<meta property="og:description" content="Everything's better in violet. Cafea dimineața, limonadă la prânz, spritz seara. Afară e luni. Înăuntru e mov.">
+<meta property="og:description" content="Everything's better in violet. Locul tău preferat din Lotus, cu cafea, limonade signature și cocktailuri, zilnic 9:00–22:00.">
 <meta property="og:image" content="og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -180,7 +180,8 @@ section{padding-block:84px}
 .hours{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mist-dim);font-variant-numeric:tabular-nums}
 .shift h3{font-size:28px}
 .shift p{color:var(--mist-dim);font-size:15px}
-.picks{list-style:none;padding:14px 0 0;margin:auto 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.rec{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne);opacity:.85}
+.picks{list-style:none;padding:4px 0 0;margin:0;display:flex;flex-direction:column;gap:8px}
 .picks li{display:flex;justify-content:space-between;gap:12px;font-size:15px}
 .picks .pr{color:var(--lilac);white-space:nowrap;font-variant-numeric:tabular-nums}
 .now-badge{position:absolute;top:12px;left:12px;z-index:2;background:var(--ink);color:var(--champagne);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
@@ -218,7 +219,7 @@ section{padding-block:84px}
 
 /* sezon */
 .cups{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-.cup{position:relative;padding:26px 22px 22px;display:flex;flex-direction:column;gap:6px;overflow:hidden;min-width:0}
+.cup{position:relative;padding:26px 22px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:132px;overflow:hidden;min-width:0}
 .steam{position:absolute;top:10px;right:18px;display:flex;gap:6px}
 .steam i{display:block;width:3px;height:26px;border-radius:3px;background:linear-gradient(180deg,transparent,rgba(244,237,252,.5));animation:steam 3.2s ease-in-out infinite}
 .steam i:nth-child(2){animation-delay:.6s;height:20px}
@@ -226,7 +227,8 @@ section{padding-block:84px}
 @keyframes steam{0%{transform:translateY(8px) scaleY(.6);opacity:0}50%{opacity:1}100%{transform:translateY(-10px) scaleY(1.1);opacity:0}}
 .cup h3{font-size:23px}
 .cup p{font-size:14px;color:var(--mist-dim)}
-.cup .pr{margin-top:10px;font-family:var(--display);font-size:20px;color:var(--champagne)}
+.cup h3{padding-right:34px;line-height:1.2}
+.cup .pr{font-family:var(--display);font-size:20px;color:var(--champagne)}
 .season-note{margin-top:22px;font-size:14px;color:var(--mist-dim)}
 
 /* meniu */
@@ -293,6 +295,7 @@ footer{padding-block:60px 130px}
 @media(max-width:760px){.dock{display:block}.nav-in .btn-cta{display:none}}
 
 /* ---------- POLAROIDURI ---------- */
+#polaroid{overflow-x:clip}
 .pol-wall{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 18px;padding-block:10px 20px}
 .pol{position:relative;width:calc((100% - 72px) / 5);max-width:220px;background:#F7F1E8;padding:12px 12px 0;border-radius:3px;box-shadow:0 18px 40px -16px rgba(5,2,12,.7),0 2px 6px rgba(5,2,12,.25);transform:rotate(var(--r,0deg)) translateY(var(--y,0px));transition:transform .35s cubic-bezier(.3,1.3,.5,1),box-shadow .35s;margin:0}
 .pol{transform-origin:50% -6px}
@@ -305,6 +308,7 @@ footer{padding-block:60px 130px}
   78%{transform:rotate(calc(var(--r,0deg) - 1deg)) translateY(var(--y,0px))}
   100%{transform:rotate(var(--r,0deg)) translateY(var(--y,0px))}}
 .p2{--sd:.12s}.p3{--sd:.24s}.p4{--sd:.08s}.p5{--sd:.2s}
+.pol .sticker{position:absolute;z-index:4;overflow:visible;pointer-events:none;filter:drop-shadow(0 2px 2px rgba(20,10,40,.35))}
 .pol:hover{transform:rotate(0deg) translateY(-8px) scale(1.04);z-index:5;box-shadow:0 28px 50px -16px rgba(5,2,12,.8)}
 .pol::before{content:"";position:absolute;top:-11px;left:50%;width:74px;height:22px;margin-left:-37px;background:rgba(243,230,207,.62);transform:rotate(var(--tr,-3deg));box-shadow:0 1px 2px rgba(0,0,0,.15);z-index:2}
 .pol .ph{position:relative;aspect-ratio:1/1;max-width:100%;overflow:hidden;background:var(--pg);display:flex;align-items:flex-end;justify-content:center}
@@ -362,7 +366,7 @@ footer{padding-block:60px 130px}
 </style>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Violet Cafebar & Lounge",
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Violet Cafebar & Lounge","slogan":"Locul tău preferat din Lotus.",
  "address":{"@type":"PostalAddress","streetAddress":"Str. Nufărului 30, Lotus Center, parter","addressLocality":"Oradea","postalCode":"410583","addressCountry":"RO"},
  "telephone":"+40756854086",
  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"22:00"}],
@@ -371,7 +375,6 @@ footer{padding-block:60px 130px}
  "sameAs":["https://www.instagram.com/violetcafebar.oradea","https://www.tiktok.com/@violetcafebar"]}
 </script>
 <style>
-/* reset de bază (în previzualizare îl adăuga platforma) */
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 img{max-width:100%}
 [hidden]{display:none!important}
@@ -392,8 +395,8 @@ img{max-width:100%}
   <div class="wrap nav-in">
     <a href="./" class="brand">Violet<span>.</span></a>
     <div class="nav-links">
-      <a href="#zi">O zi la Violet</a>
-      <a href="#polaroid">Perete</a>
+      <a href="#zi">Recomandări</a>
+      <a href="#polaroid">Galerie</a>
       <a href="#signature">Signature</a>
       <a href="#sezon">Sezonul ăsta</a>
       <a href="#meniu">Meniu</a>
@@ -408,7 +411,7 @@ img{max-width:100%}
     <div class="arch">
       <span class="eyebrow hero-eyebrow"><span>Cafebar &amp; lounge</span><span>Lotus Center, parter · Oradea</span></span>
       <h1>Everything's better in <em>violet</em>.</h1>
-      <p class="tag">Afară e luni. Înăuntru e mov.</p>
+      <p class="tag">Locul tău preferat din Lotus.</p>
       <div class="status" id="status"><span class="dot"></span><span id="statusText">Zilnic 9:00 – 22:00</span></div>
       <p class="sub">Cafea dimineața, limonadă la prânz, spritz seara. Laptopul și cățelul sunt invitați la orice oră.</p>
       <div class="hero-cta">
@@ -427,17 +430,17 @@ img{max-width:100%}
     <span>Chai latte</span><span>Ciocolată caldă</span><span>Flat White</span><span>Limonada Violet</span><span>Cappuccino Vienez</span><span>Violet Spritz</span><span>Irish Coffee</span>
   </div></div>
   <div class="band band-b"><div class="track">
-    <span>Ia-ți laptopul</span><span>Adu-ți cățelul</span><span>Adu-ți fetele</span><span>Rămâi la încă una</span><span>Lotus Center</span><span>Mereu mov</span>
-    <span>Ia-ți laptopul</span><span>Adu-ți cățelul</span><span>Adu-ți fetele</span><span>Rămâi la încă una</span><span>Lotus Center</span><span>Mereu mov</span>
+    <span>Ia-ți laptopul</span><span>Adu-ți cățelul</span><span>Sărbătorește aici</span><span>Lotus Center</span><span>Deschis 9–22</span><span>Rezervă o masă</span>
+    <span>Ia-ți laptopul</span><span>Adu-ți cățelul</span><span>Sărbătorește aici</span><span>Lotus Center</span><span>Deschis 9–22</span><span>Rezervă o masă</span>
   </div></div>
 </div>
 
 <section id="zi">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">O zi la Violet</span>
-      <h2>Trei ture. <em>Același mov.</em></h2>
-      <p>Violet se schimbă pe parcursul zilei. Alege-ți tura.</p>
+      <span class="eyebrow">Recomandările zilei</span>
+      <h2>De la prima cafea <em>la ultimul pahar.</em></h2>
+      <p>Câte o alegere potrivită pentru fiecare moment al zilei.</p>
     </div>
     <div class="day">
       <article class="shift panel s-morn" data-from="9" data-to="12">
@@ -445,7 +448,8 @@ img{max-width:100%}
         <div class="shift-body">
           <span class="hours">09:00 – 12:00</span>
           <h3>Dimineața</h3>
-          <p>Wi-Fi, prize și o masă la geam. Pentru cei care au de lucru și pentru cei care doar par că au.</p>
+          <p>Prima cafea a zilei, o masă la geam și Wi-Fi, dacă ai de lucru.</p>
+          <span class="rec">Recomandăm</span>
           <ul class="picks">
             <li><span>Flat White</span><span class="pr">21 lei</span></li>
             <li><span>Cappuccino</span><span class="pr">15 lei</span></li>
@@ -458,7 +462,8 @@ img{max-width:100%}
         <div class="shift-body">
           <span class="hours">12:00 – 18:00</span>
           <h3>După-amiaza</h3>
-          <p>Pauza care se lungește cu încă o băutură. Cățelul primește bolul lui cu apă.</p>
+          <p>Pentru o pauză mai lungă, cu o limonadă rece sau o ciocolată caldă.</p>
+          <span class="rec">Recomandăm</span>
           <ul class="picks">
             <li><span>Limonada Violet</span><span class="pr">23 lei</span></li>
             <li><span>Ciocolată caldă</span><span class="pr">20 lei</span></li>
@@ -471,11 +476,12 @@ img{max-width:100%}
         <div class="shift-body">
           <span class="hours">18:00 – 22:00</span>
           <h3>Seara</h3>
-          <p>Luminile se fac mai mov. Nu e o metaforă, chiar se fac.</p>
+          <p>Luminile se fac mov, iar meniul trece de la cafea la cocktailuri.</p>
+          <span class="rec">Recomandăm</span>
           <ul class="picks">
             <li><span>Irish Coffee</span><span class="pr">18 lei</span></li>
             <li><span>Aperol Spritz</span><span class="pr">25 lei</span></li>
-            <li><span>Violet Spritz</span><span class="pr">în curând</span></li>
+            <li><span>Violet Spritz</span><span class="pr">25 lei</span></li>
           </ul>
         </div>
       </article>
@@ -486,15 +492,14 @@ img{max-width:100%}
 <section id="polaroid">
   <div class="wrap">
     <div class="sec-head center">
-      <span class="eyebrow">Pe peretele nostru</span>
-      <h2>Dovezi că <em>ați fost aici.</em></h2>
+      <h2>Violet <em>vibes.</em></h2>
     </div>
     <div class="pol-wall">
-      <figure class="pol p1"><div class="ph"><span class="lbl">dimineața</span><img src="images/polaroid-1.jpg" alt="Cafea și laptop dimineața la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>9:14. laptopul a ajuns primul.</figcaption></figure>
-      <figure class="pol p2"><div class="ph"><span class="lbl">signature</span><img src="images/polaroid-2.jpg" alt="Limonada Violet" loading="lazy" onerror="this.remove()"></div><figcaption>limonada s-a făcut mov. noi nu.</figcaption></figure>
-      <figure class="pol p3"><div class="ph"><span class="lbl">prânz</span><img src="images/polaroid-3.jpg" alt="Prieteni la masă la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>pauza de 10 minute. a durat două ore.</figcaption></figure>
-      <figure class="pol p4"><div class="ph"><span class="lbl">după-amiaza</span><img src="images/polaroid-4.jpg" alt="Cățel la masă la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>el a ales masa. noi am plătit.</figcaption></figure>
-      <figure class="pol p5"><div class="ph"><span class="lbl">seara</span><img src="images/polaroid-5.jpg" alt="Violet seara, cu lumini mov" loading="lazy" onerror="this.remove()"></div><figcaption>21:40. „ultima, promit.”</figcaption></figure>
+      <figure class="pol p1"><div class="ph"><span class="lbl">dimineața</span><img src="images/polaroid-1.jpg" alt="Băutură pe bază de cafea la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>băuturi pe bază de cafea</figcaption><svg class="sticker" viewBox="0 0 40 40" width="58" height="58" style="right:-14px;bottom:72px;transform:rotate(14deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" stroke-linecap="round"><path d="M20 38C20 28 21 18 24 4" fill="none" stroke="#7FA36B"/></g><path d="M20 38C20 28 21 18 24 4" fill="none" stroke="#7FA36B" stroke-width="2" stroke-linecap="round"/><path d="M20.5 30C16 28 14 25 14 22" fill="none" stroke="#7FA36B" stroke-width="1.8" stroke-linecap="round"/><g fill="#9D7BD8" stroke="#fff" stroke-width="1.4"><ellipse cx="24.5" cy="5" rx="2.8" ry="4" transform="rotate(15 24.5 5)"/><ellipse cx="21.6" cy="9" rx="2.8" ry="4" transform="rotate(-25 21.6 9)"/><ellipse cx="26.4" cy="10" rx="2.8" ry="4" transform="rotate(35 26.4 10)"/><ellipse cx="22" cy="14.5" rx="2.8" ry="4" transform="rotate(-25 22 14.5)"/><ellipse cx="25.8" cy="15.5" rx="2.8" ry="4" transform="rotate(35 25.8 15.5)"/><ellipse cx="21.4" cy="20" rx="2.8" ry="4" transform="rotate(-25 21.4 20)"/><ellipse cx="25" cy="21" rx="2.8" ry="4" transform="rotate(35 25 21)"/></g></svg><svg class="sticker" viewBox="0 0 40 40" width="26" height="26" style="left:-10px;top:24px;transform:rotate(-8deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#F3E6CF" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg></figure>
+      <figure class="pol p2"><div class="ph"><span class="lbl">signature</span><img src="images/polaroid-2.jpg" alt="Limonada Violet" loading="lazy" onerror="this.remove()"></div><figcaption>limonada violet</figcaption><svg class="sticker" viewBox="0 0 40 40" width="46" height="46" style="right:-16px;top:-14px;transform:rotate(18deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"><circle cx="20" cy="20" r="16" fill="#F4D23C"/></g><circle cx="20" cy="20" r="16" fill="#F4D23C"/><circle cx="20" cy="20" r="13.5" fill="#FFF6D2"/><circle cx="20" cy="20" r="12" fill="#FBE36A"/><g stroke="#FFF8DC" stroke-width="1.4" stroke-linecap="round"><path d="M20 20V8.5"/><path d="M20 20L30 14.3"/><path d="M20 20L30 25.7"/><path d="M20 20V31.5"/><path d="M20 20L10 25.7"/><path d="M20 20L10 14.3"/></g></svg><svg class="sticker" viewBox="0 0 40 40" width="22" height="22" style="left:8px;bottom:80px;transform:rotate(10deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#D8BDFA" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg></figure>
+      <figure class="pol p3"><div class="ph"><span class="lbl">prânz</span><img src="images/polaroid-3.jpg" alt="Limonade cu aloe la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>limonade cu aloe</figcaption><svg class="sticker" viewBox="0 0 40 40" width="40" height="40" style="left:-14px;bottom:70px;transform:rotate(-12deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"><g fill="#B48AE8"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g></g><g fill="#B48AE8"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g><circle cx="20" cy="20" r="4.2" fill="#F7D978"/></svg><svg class="sticker" viewBox="0 0 40 40" width="28" height="28" style="left:16px;bottom:58px;transform:rotate(20deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"><g fill="#D9B8F5"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g></g><g fill="#D9B8F5"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g><circle cx="20" cy="20" r="4.2" fill="#F7D978"/></svg></figure>
+      <figure class="pol p4"><div class="ph"><span class="lbl">după-amiaza</span><img src="images/polaroid-4.jpg" alt="Cocktail pe terasă la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>cocktails &amp; mocktails</figcaption><svg class="sticker" viewBox="0 0 40 40" width="36" height="36" style="right:-12px;top:30px;transform:rotate(14deg)" aria-hidden="true"><path d="M20 34C9 26 4 20 4 13.5C4 8.5 8 5 12.5 5C16 5 18.6 7 20 9.6C21.4 7 24 5 27.5 5C32 5 36 8.5 36 13.5C36 20 31 26 20 34Z" fill="#F4A8C8" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/><path d="M11 12.5C11.5 10.5 13 9.5 14.5 9.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"/></svg><svg class="sticker" viewBox="0 0 40 40" width="38" height="38" style="left:-12px;bottom:76px;transform:rotate(-10deg)" aria-hidden="true"><g fill="#fff" stroke="#E9DCF7" stroke-width="1"><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(0 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(45 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(90 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(135 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(180 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(225 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(270 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(315 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#F7C948" stroke="#fff" stroke-width="2"/></svg></figure>
+      <figure class="pol p5"><div class="ph"><span class="lbl">seara</span><img src="images/polaroid-5.jpg" alt="Cheesecake cu sos de fructe de pădure, prăjituri la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>prăjituri</figcaption><svg class="sticker" viewBox="0 0 40 40" width="36" height="36" style="right:-10px;top:22px;transform:rotate(-10deg)" aria-hidden="true"><path d="M26 4A16 16 0 1 0 36 26A13 13 0 1 1 26 4Z" fill="#F3E6CF" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg><svg class="sticker" viewBox="0 0 40 40" width="18" height="18" style="right:22px;top:8px;transform:rotate(0deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#F3E6CF" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg><svg class="sticker" viewBox="0 0 40 40" width="22" height="22" style="left:-8px;bottom:84px;transform:rotate(16deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#D8BDFA" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg></figure>
     </div>
   </div>
 </section>
@@ -644,7 +649,7 @@ img{max-width:100%}
       <div class="sec-head">
         <span class="eyebrow">Made in violet</span>
         <h2>Sip the <em>violet</em>.</h2>
-        <p>Floarea de butterfly pea își schimbă culoarea când dă de citrice. Noi doar am construit o cafenea în jurul fenomenului.</p>
+        <p>Totul pornește de la o floare albastră care se colorează în mov la prima picătură de lămâie.</p>
       </div>
       <div class="sig-list">
         <div class="sig-item panel">
@@ -653,7 +658,7 @@ img{max-width:100%}
           <span class="pill">De zi</span>
         </div>
         <div class="sig-item panel">
-          <div class="sig-top"><h3>Violet Spritz</h3><span class="pr">în curând</span></div>
+          <div class="sig-top"><h3>Violet Spritz</h3><span class="pr">25 lei</span></div>
           <p>Butterfly pea, prosecco, apă minerală.</p>
           <span class="pill">De seară</span>
         </div>
@@ -665,12 +670,11 @@ img{max-width:100%}
 <section id="sezon">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow" id="seasonEyebrow">Sezonul ăsta</span>
-      <h2 id="seasonTitle">Toamna, <em>în variantă caldă.</em></h2>
-      <p id="seasonLead">Ce cerem toți când se face frig, plus două variante de ciocolată ca să ai cu cine să te cerți.</p>
+      <span class="eyebrow" id="seasonEyebrow">Recomandarea sezonului</span>
+      <h2 id="seasonTitle">Sezonul rece, <em>în variantă caldă.</em></h2>
+      <p id="seasonLead">Ce recomandăm cât e frig afară.</p>
     </div>
     <div class="cups" id="cups"></div>
-    <p class="season-note">Lista se schimbă odată cu sezonul. Mov-ul rămâne.</p>
   </div>
 </section>
 
@@ -678,8 +682,8 @@ img{max-width:100%}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Din meniu</span>
-      <h2>Câteva <em>preferate.</em></h2>
-      <p>O selecție. Restul meniului, cu vinuri și beri, e la un tap distanță.</p>
+      <h2>Preferatele <em>casei.</em></h2>
+      <p>O selecție din meniu. Meniul complet, cu vinuri și beri, îl găsești online.</p>
     </div>
     <div class="panel menu-panel">
       <div class="menu-grid">
@@ -701,7 +705,7 @@ img{max-width:100%}
         </div>
         <div class="menu-col">
           <h3>Cocktailuri</h3>
-          <div class="mi"><span class="nm">Violet Spritz<em>signature</em></span><span class="fill"></span><span class="pr">în curând</span></div>
+          <div class="mi"><span class="nm">Violet Spritz<em>signature</em></span><span class="fill"></span><span class="pr">25 lei</span></div>
           <div class="mi"><span class="nm">Aperol Spritz</span><span class="fill"></span><span class="pr">25 lei</span></div>
           <div class="mi"><span class="nm">Hugo</span><span class="fill"></span><span class="pr">27 lei</span></div>
           <div class="mi"><span class="nm">Pornstar Martini</span><span class="fill"></span><span class="pr">30 lei</span></div>
@@ -729,7 +733,7 @@ img{max-width:100%}
   <div class="wrap">
     <p class="neon" aria-label="Violet">Violet</p>
     <p class="neon-reflect" aria-hidden="true">Violet</p>
-    <p class="neon-sub">Luminile se fac mai mov. Nu e o metaforă.</p>
+    <p class="neon-sub">See you after sunset.</p>
   </div>
 </section>
 
@@ -737,22 +741,22 @@ img{max-width:100%}
   <div class="wrap">
     <div class="panel occ">
       <div>
-        <span class="eyebrow">Ai o ocazie?</span>
-        <h2 style="margin-top:14px">Unele seri merită <em>o masă sigură.</em></h2>
-        <p class="lead">Zi de naștere, fetele, prietenii pe care nu i-ai văzut de ani. Alege ce sărbătorești și sună-ne din timp.</p>
+        <span class="eyebrow">Ocazii speciale</span>
+        <h2 style="margin-top:14px">Pentru serile <em>care contează.</em></h2>
+        <p class="lead">Zile de naștere, ieșiri cu prietenii sau o seară în doi. Spune-ne ce sărbătorești și pregătim masa.</p>
         <div class="chips" id="chips" role="group" aria-label="Alege ocazia">
           <button type="button" class="chip" aria-pressed="true" data-k="bday">Zi de naștere</button>
-          <button type="button" class="chip" aria-pressed="false" data-k="girls">Ieșire cu fetele</button>
-          <button type="button" class="chip" aria-pressed="false" data-k="old">Reîntâlnire cu prietenii vechi</button>
-          <button type="button" class="chip" aria-pressed="false" data-k="work">After-work cu colegii</button>
-          <button type="button" class="chip" aria-pressed="false" data-k="date">Prima întâlnire</button>
-          <button type="button" class="chip" aria-pressed="false" data-k="other">Altceva</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="girls">Ieșire cu prietenele</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="old">Reîntâlnire</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="work">After-work</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="date">Întâlnire în doi</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="other">Altă ocazie</button>
         </div>
       </div>
       <div class="occ-card" aria-live="polite">
         <span class="k" id="occKey">Zi de naștere</span>
-        <h3 id="occTitle">Un an în plus merită o masă rezervată, nu una găsită la noroc.</h3>
-        <p id="occText">Spune-ne câți sunteți și la ce oră. Voi aduceți povestea, noi lumina potrivită pentru poze.</p>
+        <h3 id="occTitle">O zi de naștere în nuanțe de mov.</h3>
+        <p id="occText">Spune-ne câți sunteți și la ce oră, iar noi pregătim masa.</p>
         <a href="#rezerva" class="btn btn-cta" id="occBtn">Rezervă pentru ziua ta</a>
       </div>
     </div>
@@ -792,7 +796,7 @@ img{max-width:100%}
     <div class="foot-brand">Violet<span>.</span></div>
     <p class="foot-night">S-a făcut seară. Ne vedem mâine la 9.</p>
     <div class="foot-links">
-      <a href="#zi">O zi la Violet</a>
+      <a href="#zi">Recomandări</a>
       <a href="#meniu">Meniu</a>
       <a href="#ocazii">Ocazii</a>
       <a href="#rezerva">Rezervări</a>
@@ -888,20 +892,32 @@ img{max-width:100%}
 
 /* ===== Sezoane: schimbă doar conținutul de aici ===== */
 const SEASONS = {
-  toamna: {
-    months:[9,10,11],
-    eyebrow:'Sezonul ăsta · toamnă',
-    title:'Toamna, <em>în variantă caldă.</em>',
-    lead:'Ce cerem toți când se face frig, plus două variante de ciocolată ca să ai cu cine să te cerți.',
+  rece: {
+    months:[10,11,12,1,2,3],
+    eyebrow:'Recomandarea sezonului',
+    title:'Sezonul rece, <em>în variantă caldă.</em>',
+    lead:'Ce recomandăm cât e frig afară.',
     items:[
-      {n:'Chai Latte', d:'Condimentat, cremos, exact cât trebuie de dulce.', p:'în meniu', hot:true},
-      {n:'Ciocolată caldă albă', d:'Pentru echipa „dulce și liniștit”.', p:'20 lei', hot:true},
-      {n:'Ciocolată caldă neagră', d:'Pentru echipa „intens și fără scuze”.', p:'20 lei', hot:true},
-      {n:'Cappuccino Vienez', d:'Cappuccino care a decis că merită frișcă.', p:'16 lei', hot:true},
-      {n:'Irish Coffee', d:'Cafeaua serii. Te încălzește din două direcții.', p:'18 lei', hot:true}
+      {n:'Chai Latte', p:'în meniu', hot:true},
+      {n:'Ciocolată caldă albă', p:'20 lei', hot:true},
+      {n:'Ciocolată caldă neagră', p:'20 lei', hot:true},
+      {n:'Cappuccino Vienez', p:'16 lei', hot:true},
+      {n:'Irish Coffee', p:'18 lei', hot:true}
+    ]
+  },
+  cald: {
+    months:[4,5,6,7,8,9],
+    eyebrow:'Recomandarea sezonului',
+    title:'Sezonul cald, <em>în variantă rece.</em>',
+    lead:'Ce recomandăm cât e cald afară.',
+    items:[
+      {n:'Limonada Violet', p:'23 lei'},
+      {n:'Limonadă Zmeură', p:'23 lei'},
+      {n:'Limonadă Mentă & Ghimbir', p:'23 lei'},
+      {n:'Iced Matcha', p:'17 lei'},
+      {n:'Violet Spritz', p:'25 lei'}
     ]
   }
-  /* iarna: {months:[12,1,2], ...}, primavara: {months:[3,4,5], ...}, vara: {months:[6,7,8], ...} */
 };
 (function(){
   const m=new Date().getMonth()+1;
@@ -911,7 +927,7 @@ const SEASONS = {
   document.getElementById('seasonLead').textContent=s.lead;
   document.getElementById('cups').innerHTML=s.items.map(i=>`
     <div class="cup panel">${i.hot?'<span class="steam" aria-hidden="true"><i></i><i></i><i></i></span>':''}
-      <h3>${i.n}</h3><p>${i.d}</p><span class="pr">${i.p}</span></div>`).join('');
+      <h3>${i.n}</h3><span class="pr">${i.p}</span></div>`).join('');
 })();
 
 /* ===== Deschis acum + tura curentă (ora din Oradea) ===== */
@@ -936,12 +952,12 @@ const SEASONS = {
 /* ===== Ocazii ===== */
 (function(){
   const OCC={
-    bday:{k:'Zi de naștere',t:'Un an în plus merită o masă rezervată, nu una găsită la noroc.',d:'Spune-ne câți sunteți și la ce oră. Voi aduceți povestea, noi lumina potrivită pentru poze.',b:'Rezervă pentru ziua ta'},
-    girls:{k:'Ieșire cu fetele',t:'Trei ore de povești care trebuiau să fie una.',d:'Masă pentru toate, băuturi mov pentru story și nimeni care să vă grăbească.',b:'Rezervă pentru fete'},
-    old:{k:'Reîntâlnire',t:'Ultima dată ați zis „ne vedem săptămâna viitoare”. Acum cinci ani.',d:'De data asta măcar masa să fie sigură. Restul se recuperează la a doua cafea.',b:'Rezervă pentru reîntâlnire'},
-    work:{k:'After-work',t:'Singura ședință la care vine toată lumea.',d:'Fără laptop de data asta. Sau cu, nu judecăm.',b:'Rezervă pentru echipă'},
-    date:{k:'Prima întâlnire',t:'Lumină caldă, fundal mov, zero presiune.',d:'Dacă merge prost, măcar băuturile au fost bune.',b:'Rezervă pentru doi'},
-    other:{k:'Altceva',t:'Nu trebuie să ai un motiv.',d:'Dar dacă ai unul, spune-ni-l când suni. Ne place să știm ce sărbătorim.',b:'Rezervă o masă'}
+    bday:{k:'Zi de naștere',t:'O zi de naștere în nuanțe de mov.',d:'Spune-ne câți sunteți și la ce oră, iar noi pregătim masa.',b:'Rezervă pentru ziua ta'},
+    girls:{k:'Ieșire cu prietenele',t:'O seară doar pentru voi.',d:'O masă pentru toate, băuturi signature și timp pentru povești.',b:'Rezervă pentru voi'},
+    old:{k:'Reîntâlnire',t:'Pentru prietenii pe care nu i-ai mai văzut de mult.',d:'Rezervă din timp, ca să vă rămână tot timpul pentru povești.',b:'Rezervă pentru reîntâlnire'},
+    work:{k:'After-work',t:'Finalul perfect al unei zile de lucru.',d:'O masă pentru toată echipa, de la cafea la cocktailuri.',b:'Rezervă pentru echipă'},
+    date:{k:'Întâlnire în doi',t:'O seară în doi, la lumină caldă.',d:'O masă liniștită, unde conversația curge firesc.',b:'Rezervă pentru doi'},
+    other:{k:'Altă ocazie',t:'Orice motiv e unul bun.',d:'Spune-ne ce sărbătorești când suni și ne ocupăm de restul.',b:'Rezervă o masă'}
   };
   let current='bday';
   const chips=document.querySelectorAll('.chip');
@@ -1039,7 +1055,7 @@ const SEASONS = {
   btn.addEventListener('click',()=>{
     on=!on; g.classList.toggle('lemon',on);
     btn.textContent=on?'Încă o dată':'Adaugă lămâia';
-    note.textContent=on?'Gata. Asta e Limonada Violet. Fără filtre.':'Butterfly pea e albastru. Până întâlnește lămâia.';
+    note.textContent=on?'Gata. Asta e Limonada Violet.':'Butterfly pea e albastru. Până întâlnește lămâia.';
   });
 })();
 
