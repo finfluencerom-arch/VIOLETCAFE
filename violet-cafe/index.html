@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Violet Cafebar &amp; Lounge · Cafenea în Lotus Center, Oradea</title>
+<meta name="description" content="Violet Cafebar & Lounge, locul tău preferat din Lotus. Cafea, limonade signature și cocktailuri, zilnic 9:00–22:00, la parter în Lotus Center Oradea.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Violet Cafebar &amp; Lounge">
+<meta property="og:title" content="Violet Cafebar &amp; Lounge · Lotus Center, Oradea">
+<meta property="og:description" content="Everything's better in violet. Locul tău preferat din Lotus, cu cafea, limonade signature și cocktailuri, zilnic 9:00–22:00.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ro_RO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#221544">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,100;1,9..144,400..700,100&family=Instrument+Sans:wght@400;500;600&family=Yellowtail&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: the page is one day. Scroll position drives a fixed sky: deep dawn with a rising sun at
+   the top, lavender day, pink dusk, then night with stars at the bottom. Content floats on
+   dark glass panels so it reads at every hour. Hero sits centered under an arch (bolta). */
+:root{
+  --ink:#130B22;        /* deepest night, panels */
+  --mist:#F4EDFC;       /* main text */
+  --mist-dim:#CBBEDF;   /* secondary text */
+  --violet:#9A6AE3;     /* brand accent */
+  --lilac:#D8BDFA;      /* soft accent, italics */
+  --champagne:#F3E6CF;  /* cremă caldă: CTA, prețuri */
+  --pea:#3D5FD8;        /* butterfly pea before lemon */
+  --line:rgba(216,189,250,.22);
+  --glass:rgba(19,11,34,.52);
+  --display:'Fraunces','Iowan Old Style',Georgia,serif;
+  --body:'Instrument Sans','Helvetica Neue',Arial,sans-serif;
+  --maxw:1140px;
+  /* sky, driven by scroll */
+  --s1:#221544; --s2:#6A3F8E; --s3:#F0A07F; --cloud:#F6C4CB; --cloud-o:.55;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--mist);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--s1)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;letter-spacing:-.015em;text-wrap:balance;margin:0;font-variation-settings:"SOFT" 100}
+p{margin:0}
+:focus-visible{outline:2px solid var(--champagne);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
+@media(min-width:700px){.wrap{padding-left:max(32px, env(safe-area-inset-left,0px));padding-right:max(32px, env(safe-area-inset-right,0px))}}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--lilac);font-weight:500}
+
+/* ---------- SKY ---------- */
+.sky{position:fixed;inset:0;z-index:-3;background:linear-gradient(180deg,var(--s1) 0%,var(--s2) 62%,var(--s3) 100%)}
+.stars{position:fixed;inset:0;z-index:-2;width:100%;height:100%;opacity:0;pointer-events:none}
+.sun{position:fixed;left:50%;top:0;z-index:-2;width:150px;height:150px;margin-left:-75px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,#FFF3DC 0 34%,#FFD6A3 46%,rgba(255,170,140,.45) 60%,rgba(255,150,150,0) 72%);
+  filter:blur(.5px);will-change:transform,opacity}
+.sun::after{content:"";position:absolute;inset:-160px;border-radius:50%;background:radial-gradient(circle,rgba(255,190,160,.35),rgba(255,160,180,0) 62%)}
+.moon{position:fixed;right:12vw;top:14vh;z-index:-2;width:54px;height:54px;border-radius:50%;opacity:0;pointer-events:none;
+  background:radial-gradient(circle at 35% 35%,#FBF6FF,#D9CBEF 70%);box-shadow:0 0 50px rgba(230,215,255,.45)}
+.clouds{position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:var(--cloud-o);will-change:transform}
+.cloud{position:absolute;height:60px;border-radius:60px;background:var(--cloud);filter:blur(14px);animation:drift linear infinite}
+.cloud::before,.cloud::after{content:"";position:absolute;border-radius:50%;background:var(--cloud)}
+.cloud::before{width:55%;height:150%;left:14%;top:-70%}
+.cloud::after{width:40%;height:120%;right:12%;top:-48%}
+.c1{top:14vh;width:280px;left:-10vw;animation-duration:95s}
+.c2{top:30vh;width:200px;left:60vw;animation-duration:120s;animation-delay:-40s;opacity:.8}
+.c3{top:52vh;width:340px;left:20vw;animation-duration:140s;animation-delay:-70s;opacity:.7}
+.c4{top:70vh;width:240px;left:80vw;animation-duration:110s;animation-delay:-20s;opacity:.85}
+.c5{top:8vh;width:180px;left:40vw;animation-duration:150s;animation-delay:-100s;opacity:.6}
+@keyframes drift{from{transform:translateX(-30vw)}to{transform:translateX(120vw)}}
+.bokeh{position:fixed;inset:0;z-index:-2;pointer-events:none;opacity:var(--bokeh,0)}
+.bk{position:absolute;border-radius:50%;filter:blur(var(--b,6px));mix-blend-mode:screen;animation:float var(--d,30s) ease-in-out infinite alternate;animation-delay:var(--dl,0s)}
+@keyframes float{to{transform:translate(var(--tx,20px),var(--ty,-30px)) scale(1.08)}}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.06;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- NAV ---------- */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(19,11,34,.38);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{font-family:var(--display);font-size:26px;font-weight:600;text-decoration:none;font-style:italic}
+.brand span{color:var(--violet)}
+.nav-links{display:flex;gap:26px;font-size:14px;color:var(--mist-dim)}
+.nav-links a{text-decoration:none}
+.nav-links a:hover{color:var(--mist)}
+@media(max-width:860px){.nav-links{display:none}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:var(--body);transition:transform .25s cubic-bezier(.3,1.4,.5,1),box-shadow .25s ease,background .2s,border-color .2s,color .2s}
+.btn-cta{position:relative;overflow:hidden;color:var(--ink);background:linear-gradient(180deg,#FFF9EF 0%,var(--champagne) 55%,#E6D2B0 100%);
+  border-color:rgba(255,246,228,.7);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -2px 0 rgba(120,88,52,.18),0 1px 2px rgba(5,2,12,.35),0 10px 24px -10px rgba(5,2,12,.75),0 0 28px -6px color-mix(in srgb,var(--s3) 70%,transparent);
+  text-shadow:0 1px 0 rgba(255,255,255,.55)}
+.btn-cta::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);transition:left .7s ease}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -2px 0 rgba(120,88,52,.18),0 2px 4px rgba(5,2,12,.3),0 18px 34px -12px rgba(5,2,12,.8),0 0 38px -4px color-mix(in srgb,var(--s3) 85%,transparent)}
+.btn-cta:hover::after{left:130%}
+.btn-cta:active{transform:translateY(1px);box-shadow:inset 0 2px 4px rgba(120,88,52,.3),0 4px 10px -6px rgba(5,2,12,.7)}
+.btn-line{color:var(--mist);background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.02)),rgba(19,11,34,.35);border-color:rgba(244,237,252,.32);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -1px 0 rgba(0,0,0,.25),0 8px 22px -10px rgba(5,2,12,.7)}
+.btn-line:hover{border-color:var(--lilac);color:#fff;transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 14px 30px -12px rgba(5,2,12,.8),0 0 24px -6px rgba(216,189,250,.55)}
+.btn-line:active{transform:translateY(1px)}
+.btn-sm{padding:9px 18px;font-size:14px}
+
+/* ---------- HERO / BOLTA ---------- */
+.hero{padding-block:56px 0}
+.arch{position:relative;max-width:820px;margin:0 auto;padding:clamp(96px,14vw,150px) clamp(20px,5vw,64px) clamp(110px,14vw,150px);
+  text-align:center;border:1px solid rgba(244,226,255,.35);border-bottom:none;border-radius:420px 420px 0 0;
+  background:linear-gradient(180deg,rgba(19,11,34,.55) 0%,rgba(19,11,34,.22) 70%,rgba(19,11,34,0) 100%);
+  display:flex;flex-direction:column;align-items:center;gap:20px}
+.arch::before{content:"";position:absolute;inset:16px 16px 0;border:1px solid rgba(244,226,255,.14);border-bottom:none;border-radius:420px 420px 0 0;pointer-events:none}
+.horizon{max-width:1000px;margin:0 auto;height:1px;background:linear-gradient(90deg,transparent,rgba(255,214,180,.7),transparent)}
+.hero h1{font-size:clamp(46px,8.4vw,104px);line-height:.94;font-weight:500;text-shadow:0 2px 30px rgba(19,11,34,.35)}
+.hero h1 em{font-style:italic;font-weight:400;background:linear-gradient(100deg,#F6D2F0,var(--lilac),#F3B4C9,#F6D2F0);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 9s ease-in-out infinite}
+@keyframes sheen{50%{background-position:100% 0}}
+.hero-eyebrow{display:flex;flex-direction:column;align-items:center;gap:4px;line-height:1.6}
+.hero-eyebrow span{white-space:nowrap}
+@media(max-width:600px){.hero-eyebrow{font-size:11px;letter-spacing:.13em}}
+.hero .tag{font-family:var(--display);font-style:italic;font-size:clamp(21px,2.5vw,28px);color:var(--lilac)}
+.hero .sub{color:var(--mist-dim);font-size:17px;max-width:40ch}
+.hero-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:14px;background:rgba(19,11,34,.5);border:1px solid var(--line);padding:7px 14px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:#7EE0A1;box-shadow:0 0 0 4px rgba(126,224,161,.25);animation:pulse 2.4s infinite}
+.status.closed .dot{background:var(--mist-dim);box-shadow:none;animation:none}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(126,224,161,0)}}
+.perks{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.perk{font-size:13px;color:var(--mist-dim);border:1px solid var(--line);padding:5px 12px;border-radius:999px;background:rgba(19,11,34,.3)}
+
+/* ---------- BANDS ---------- */
+.bands{position:relative;height:150px;margin-block:40px 10px;overflow:hidden}
+.band{position:absolute;left:-5%;width:110%;overflow:hidden;white-space:nowrap;padding-block:14px}
+.band-a{top:22px;color:#2A1F45;transform:rotate(-3deg);z-index:2;
+  background:linear-gradient(180deg,#FFFAF1 0%,var(--champagne) 45%,#E4CFAB 100%);
+  border-block:1px solid rgba(255,250,240,.9);
+  box-shadow:inset 0 1px 0 #fff,inset 0 -3px 6px -2px rgba(120,88,52,.25),0 4px 6px -2px rgba(5,2,12,.35),0 26px 40px -16px rgba(5,2,12,.75),0 0 60px -10px color-mix(in srgb,var(--s3) 60%,transparent)}
+.band-a::after{content:"";position:absolute;top:0;bottom:0;left:-30%;width:22%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.7),transparent);transform:skewX(-20deg);animation:bandsheen 7s ease-in-out infinite;pointer-events:none}
+@keyframes bandsheen{0%,55%{left:-30%}100%{left:130%}}
+.band-a .track span{text-shadow:0 1px 0 rgba(255,255,255,.7)}
+.band-b{top:62px;color:var(--lilac);transform:rotate(2.2deg);
+  background:linear-gradient(180deg,rgba(60,38,96,.75),rgba(19,11,34,.85));
+  border-top:1px solid rgba(216,189,250,.35);border-bottom:1px solid rgba(0,0,0,.4);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 18px 34px -16px rgba(5,2,12,.8)}
+.band-b .track span{text-shadow:0 0 14px rgba(185,127,242,.75),0 0 2px rgba(216,189,250,.6)}
+.track{display:inline-flex;animation:roll 38s linear infinite}
+.band-b .track{animation-duration:46s;animation-direction:reverse}
+.track span{font-family:var(--display);font-size:clamp(20px,2.6vw,28px);font-style:italic;padding-inline:22px;display:inline-flex;align-items:center;gap:22px}
+.track span::after{content:"✦";font-style:normal;font-size:.6em;opacity:.7}
+@keyframes roll{to{transform:translateX(-50%)}}
+.bands:hover .track{animation-play-state:paused}
+@media(max-width:600px){.bands{height:124px}.band-b{top:54px}}
+
+/* ---------- SECTIONS ---------- */
+section{padding-block:84px}
+.sec-head{display:flex;flex-direction:column;gap:14px;max-width:640px;margin-bottom:40px}
+.sec-head.center{margin-inline:auto;text-align:center;align-items:center}
+.sec-head h2{font-size:clamp(34px,5vw,56px);line-height:1.02;text-shadow:0 2px 24px rgba(19,11,34,.4)}
+.sec-head h2 em{font-style:italic;color:var(--lilac);font-weight:400}
+.sec-head p{color:var(--mist-dim);font-size:17px}
+.panel{border-radius:22px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--s3) 14%,transparent),transparent 38%),var(--glass);
+  border:1px solid color-mix(in srgb,var(--s3) 40%,rgba(216,189,250,.2));
+  box-shadow:inset 0 1px 0 color-mix(in srgb,var(--s3) 55%,transparent),0 24px 50px -26px color-mix(in srgb,var(--s1) 60%,#000)}
+@media(max-width:600px){section{padding-block:56px}.sec-head{margin-bottom:28px}}
+
+/* o zi la violet */
+.day{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.shift{position:relative;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .3s,border-color .3s}
+.shift:hover{transform:translateY(-4px);border-color:rgba(216,189,250,.5)}
+.mini{height:100px;position:relative}
+.mini::after{content:"";position:absolute;border-radius:50%}
+.s-morn .mini{background:linear-gradient(180deg,#4A3A8A,#C48FC9 70%,#F4B997)}
+.s-morn .mini::after{width:46px;height:46px;left:50%;margin-left:-23px;bottom:-20px;background:#FFE7C4;box-shadow:0 0 40px #FFD9A8}
+.s-noon .mini{background:linear-gradient(180deg,#5E6BCB,#9E92E2 60%,#D9BCEE)}
+.s-noon .mini::after{width:40px;height:40px;right:30px;top:16px;background:#FFF6DE;box-shadow:0 0 40px #FFF0C8}
+.s-eve .mini{background:linear-gradient(180deg,#120B22,#3B2163 65%,#8A3F96)}
+.s-eve .mini::after{width:22px;height:22px;right:36px;top:20px;background:#ECE0FA;box-shadow:-8px 4px 0 0 #2A1A4C inset}
+.shift-body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.hours{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mist-dim);font-variant-numeric:tabular-nums}
+.shift h3{font-size:28px}
+.shift p{color:var(--mist-dim);font-size:15px}
+.rec{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne);opacity:.85}
+.picks{list-style:none;padding:4px 0 0;margin:0;display:flex;flex-direction:column;gap:8px}
+.picks li{display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.picks .pr{color:var(--lilac);white-space:nowrap;font-variant-numeric:tabular-nums}
+.now-badge{position:absolute;top:12px;left:12px;z-index:2;background:var(--ink);color:var(--champagne);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+.shift.is-now{border-color:var(--champagne)}
+@media(max-width:860px){.day{grid-template-columns:1fr}}
+
+/* signature */
+.sig{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.glass-stage{display:flex;flex-direction:column;align-items:center;gap:22px;padding:40px 20px 30px}
+.glass-svg{width:min(250px,70vw);height:auto;display:block;overflow:visible}
+.glass-svg .bloom{transform:scale(0);transform-box:view-box;transform-origin:158px 92px;transition:transform 2.2s cubic-bezier(.25,.8,.3,1)}
+.glass-svg .violet{opacity:0;transition:opacity .4s ease}
+.glass-svg.lemon .bloom{transform:scale(1)}
+.glass-svg.lemon .violet{opacity:1}
+.glass-svg .glow-violet{opacity:0;transition:opacity 2s ease}
+.glass-svg.lemon .glow-violet{opacity:1}
+.glass-svg .lemon-g{transform:translate(30px,-190px) rotate(-70deg);transform-box:view-box;transform-origin:172px 40px;opacity:0;transition:transform .9s cubic-bezier(.3,1.35,.5,1),opacity .3s ease}
+.glass-svg.lemon .lemon-g{transform:translate(0,0) rotate(0deg);opacity:1}
+.glass-svg .drop{opacity:0}
+.glass-svg.lemon .drop{animation:drop .7s .55s ease-in 2}
+@keyframes drop{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(40px)}}
+.glass-svg .bub{animation:bub 4.5s linear infinite}
+@keyframes bub{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-150px);opacity:0}}
+.glass-svg .ice-float{animation:bob 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes bob{50%{transform:translateY(3px) rotate(2deg)}}
+.glass-note{font-size:14px;color:var(--mist-dim);text-align:center;max-width:30ch;min-height:2.6em}
+.sig-list{display:flex;flex-direction:column;gap:16px;min-width:0}
+.sig-item{display:flex;flex-direction:column;gap:8px;padding:22px 26px}
+.sig-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sig-item h3{font-size:30px}
+.sig-item .pr{font-family:var(--display);font-size:22px;color:var(--champagne)}
+.sig-item p{color:var(--mist-dim)}
+.pill{align-self:flex-start;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:4px 11px;border-radius:999px;background:rgba(216,189,250,.16);color:var(--lilac)}
+@media(max-width:860px){.sig{grid-template-columns:1fr;gap:28px}}
+
+/* sezon */
+.cups{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.cup{position:relative;padding:26px 22px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:132px;overflow:hidden;min-width:0}
+.steam{position:absolute;top:10px;right:18px;display:flex;gap:6px}
+.steam i{display:block;width:3px;height:26px;border-radius:3px;background:linear-gradient(180deg,transparent,rgba(244,237,252,.5));animation:steam 3.2s ease-in-out infinite}
+.steam i:nth-child(2){animation-delay:.6s;height:20px}
+.steam i:nth-child(3){animation-delay:1.2s}
+@keyframes steam{0%{transform:translateY(8px) scaleY(.6);opacity:0}50%{opacity:1}100%{transform:translateY(-10px) scaleY(1.1);opacity:0}}
+.cup h3{font-size:23px}
+.cup p{font-size:14px;color:var(--mist-dim)}
+.cup h3{padding-right:34px;line-height:1.2}
+.cup .pr{font-family:var(--display);font-size:20px;color:var(--champagne)}
+.season-note{margin-top:22px;font-size:14px;color:var(--mist-dim)}
+
+/* meniu */
+.menu-panel{padding:clamp(24px,4vw,48px)}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:36px 64px}
+.menu-col h3{font-size:22px;padding-bottom:12px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+.mi{display:flex;align-items:baseline;gap:10px;padding:8px 0;font-size:15px}
+.mi .nm{min-width:0}
+.mi .fill{flex:1;border-bottom:1px dotted rgba(203,190,223,.4);transform:translateY(-4px)}
+.mi .pr{color:var(--mist-dim);white-space:nowrap;font-variant-numeric:tabular-nums}
+.mi em{font-style:normal;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--champagne);margin-left:8px}
+.menu-foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:40px}
+.menu-foot p{color:var(--mist-dim);font-size:14px}
+@media(max-width:760px){.menu-grid{grid-template-columns:1fr;gap:28px}}
+
+/* ocazii */
+.occ{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:clamp(26px,5vw,56px);align-items:center}
+.occ h2{font-size:clamp(34px,5vw,56px);line-height:1.02}
+.occ h2 em{font-style:italic;color:var(--lilac);font-weight:400}
+.occ .lead{color:var(--mist-dim);margin-top:16px;max-width:44ch}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{font-family:var(--body);font-size:15px;color:var(--mist);background:rgba(244,237,252,.06);border:1px solid var(--line);padding:10px 16px;border-radius:999px;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.chip:hover{border-color:var(--lilac)}
+.chip[aria-pressed="true"]{background:var(--lilac);color:var(--ink);border-color:var(--lilac)}
+.occ-card{position:relative;padding:34px 30px;border-radius:22px;background:linear-gradient(160deg,rgba(154,106,227,.32),rgba(19,11,34,.4));border:1px solid var(--line);display:flex;flex-direction:column;gap:16px;min-height:250px;min-width:0}
+.occ-card .k{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--champagne)}
+.occ-card h3{font-size:clamp(28px,3.2vw,38px);line-height:1.08}
+.occ-card p{color:var(--mist-dim)}
+.occ-card .btn{align-self:flex-start;margin-top:auto}
+@media(max-width:860px){.occ{grid-template-columns:1fr;gap:28px}}
+
+/* rezerva */
+.book{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.book h2{font-size:clamp(40px,6.5vw,76px);line-height:.98}
+.book h2 em{font-style:italic;color:var(--champagne);font-weight:400}
+.book-lead{color:var(--mist-dim);font-size:17px;margin-top:18px;max-width:42ch}
+.picked{margin-top:14px;font-size:15px;color:var(--lilac);min-height:1.5em}
+.phone{margin-top:26px;display:flex;flex-direction:column;gap:14px}
+.phone .num{font-family:var(--display);font-size:clamp(34px,5vw,52px);font-variant-numeric:tabular-nums;user-select:all}
+.phone .row{display:flex;flex-wrap:wrap;gap:10px}
+.copied{font-size:13px;color:var(--champagne);min-height:1.2em}
+.facts{display:flex;flex-direction:column;padding:6px 26px}
+.fact{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:none}
+.fact .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--lilac);padding-top:3px}
+.fact .v{min-width:0}
+.fact .v a{color:var(--lilac);text-underline-offset:3px}
+.fact small{color:var(--mist-dim);font-size:13px}
+@media(max-width:860px){.book{grid-template-columns:1fr;gap:36px}}
+@media(max-width:420px){.fact{grid-template-columns:1fr;gap:4px}}
+
+footer{padding-block:60px 130px}
+.foot-in{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.foot-brand{font-family:var(--display);font-style:italic;font-size:34px;font-weight:600}
+.foot-brand span{color:var(--violet)}
+.foot-night{font-family:var(--display);font-style:italic;color:var(--mist-dim);font-size:18px}
+.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;font-size:14px;color:var(--mist-dim)}
+.foot-links a{text-decoration:none}
+.foot-links a:hover{color:var(--mist)}
+.foot-copy{font-size:12px;color:var(--mist-dim);opacity:.7}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;padding:10px max(16px, env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px, env(safe-area-inset-left,0px));background:rgba(19,11,34,.6);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.dock .btn{width:100%}
+@media(max-width:760px){.dock{display:block}.nav-in .btn-cta{display:none}}
+
+/* ---------- POLAROIDURI ---------- */
+#polaroid{overflow-x:clip}
+.pol-wall{display:flex;flex-wrap:wrap;justify-content:center;gap:28px 18px;padding-block:10px 20px}
+.pol{position:relative;width:calc((100% - 72px) / 5);max-width:220px;background:#F7F1E8;padding:12px 12px 0;border-radius:3px;box-shadow:0 18px 40px -16px rgba(5,2,12,.7),0 2px 6px rgba(5,2,12,.25);transform:rotate(var(--r,0deg)) translateY(var(--y,0px));transition:transform .35s cubic-bezier(.3,1.3,.5,1),box-shadow .35s;margin:0}
+.pol{transform-origin:50% -6px}
+.pol-wall.swing .pol{animation:swing 2.4s cubic-bezier(.3,.5,.4,1) both;animation-delay:var(--sd,0s)}
+@keyframes swing{
+  0%{transform:rotate(var(--r,0deg)) translateY(var(--y,0px))}
+  18%{transform:rotate(calc(var(--r,0deg) + 6deg)) translateY(var(--y,0px))}
+  38%{transform:rotate(calc(var(--r,0deg) - 4deg)) translateY(var(--y,0px))}
+  58%{transform:rotate(calc(var(--r,0deg) + 2.2deg)) translateY(var(--y,0px))}
+  78%{transform:rotate(calc(var(--r,0deg) - 1deg)) translateY(var(--y,0px))}
+  100%{transform:rotate(var(--r,0deg)) translateY(var(--y,0px))}}
+.p2{--sd:.12s}.p3{--sd:.24s}.p4{--sd:.08s}.p5{--sd:.2s}
+.pol .sticker{position:absolute;z-index:4;overflow:visible;pointer-events:none;filter:drop-shadow(0 2px 2px rgba(20,10,40,.35))}
+.pol:hover{transform:rotate(0deg) translateY(-8px) scale(1.04);z-index:5;box-shadow:0 28px 50px -16px rgba(5,2,12,.8)}
+.pol::before{content:"";position:absolute;top:-11px;left:50%;width:74px;height:22px;margin-left:-37px;background:rgba(243,230,207,.62);transform:rotate(var(--tr,-3deg));box-shadow:0 1px 2px rgba(0,0,0,.15);z-index:2}
+.pol .ph{position:relative;aspect-ratio:1/1;max-width:100%;overflow:hidden;background:var(--pg);display:flex;align-items:flex-end;justify-content:center}
+.pol .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(0,0,0,.12));pointer-events:none;z-index:2}
+.pol .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:saturate(.92) contrast(1.03)}
+.pol .ph .lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7);padding-bottom:12px}
+.pol figcaption{font-family:'Caveat','Bradley Hand','Segoe Print',cursive;font-size:22px;line-height:1.15;color:#2A1F45;padding:12px 4px 16px;text-align:center;min-height:74px;display:flex;align-items:center;justify-content:center}
+.p1{--r:-4deg;--tr:4deg;--pg:linear-gradient(160deg,#4A3A8A,#C48FC9 70%,#F4B997)}
+.p2{--r:3deg;--y:18px;--tr:-5deg;--pg:linear-gradient(160deg,#3D5FD8,#9A6AE3)}
+.p3{--r:-2deg;--y:-6px;--tr:2deg;--pg:linear-gradient(160deg,#5E6BCB,#D9BCEE)}
+.p4{--r:5deg;--y:14px;--tr:-2deg;--pg:linear-gradient(160deg,#7A3784,#E5858C)}
+.p5{--r:-3deg;--y:2px;--tr:5deg;--pg:linear-gradient(160deg,#120B22,#6A2F8E)}
+@media(max-width:1000px){.pol{width:calc((100% - 36px) / 3)}}
+@media(max-width:600px){.pol{width:calc((100% - 14px) / 2)}.p3{display:none}.pol-wall{gap:30px 14px}.pol{padding:9px 9px 0}.pol figcaption{font-size:18px;min-height:62px;padding:10px 2px 12px}.p2,.p4{--y:10px}}
+
+/* ---------- INTRAREA TITLULUI ---------- */
+.hero h1,.hero .tag{animation:titleIn .8s cubic-bezier(.2,.7,.3,1) both;animation-delay:var(--td,0s)}
+.hero .tag{--td:.15s}
+@keyframes titleIn{from{opacity:0;transform:translateY(10px);filter:blur(5px)}}
+
+/* ---------- NEON ȘI BECULEȚE ---------- */
+.lights-sec{padding-block:30px 84px;text-align:center;overflow:hidden}
+.string{width:100%;height:auto;display:block;overflow:visible}
+.string .wire{fill:none;stroke:rgba(244,237,252,.35);stroke-width:1.4}
+.string .cap{fill:rgba(244,237,252,.45)}
+.string .bulb{fill:rgba(244,237,252,.16);transition:fill .35s ease,filter .35s ease}
+.lit .string .bulb{fill:#FFF1D8;filter:drop-shadow(0 0 5px #FFE2B8) drop-shadow(0 0 14px rgba(255,220,170,.65))}
+.neon{font-family:'Yellowtail','Brush Script MT',cursive;font-weight:400;font-size:clamp(88px,17vw,200px);line-height:1.05;color:rgba(216,189,250,.22);margin-top:6px;letter-spacing:0;transition:color .2s}
+.lit .neon{color:#FCF4FF;text-shadow:0 0 3px #fff,0 0 10px #EBD2FF,0 0 26px #B97FF2,0 0 56px #9A5CE6,0 0 110px #7A3FD0;animation:flick 1.8s linear 1 .5s both}
+@keyframes flick{0%,6%{opacity:.25}7%,13%{opacity:1}14%,26%{opacity:.3}27%,31%{opacity:1}32%,36%{opacity:.5}37%,100%{opacity:1}}
+.neon-reflect{font-family:'Yellowtail','Brush Script MT',cursive;font-size:clamp(88px,17vw,200px);line-height:1.05;margin-top:-.42em;color:rgba(216,189,250,.12);transform:scaleY(-1);transform-origin:50% 50%;filter:blur(2.5px);opacity:.5;pointer-events:none;user-select:none;
+  -webkit-mask-image:linear-gradient(to top,rgba(0,0,0,.75),transparent 62%);mask-image:linear-gradient(to top,rgba(0,0,0,.75),transparent 62%);animation:ripple 6s ease-in-out infinite}
+.lit .neon-reflect{color:#F2E3FF;text-shadow:0 0 18px #B97FF2,0 0 50px #9A5CE6}
+@keyframes ripple{0%,100%{transform:scaleY(-1) skewX(0deg)}50%{transform:scaleY(-1.04) skewX(1.2deg)}}
+.neon-sub{font-family:var(--display);font-style:italic;font-size:clamp(20px,2.4vw,27px);color:var(--lilac);margin-top:-.4em;position:relative}
+
+/* ---------- STEAUA CĂZĂTOARE ---------- */
+.shoot{position:fixed;z-index:30;width:160px;height:36px;padding:0;margin:0;border:0;background:transparent;cursor:pointer;transform-origin:100% 50%}
+.shoot i{position:absolute;right:8px;top:50%;width:140px;height:2px;margin-top:-1px;border-radius:2px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.9))}
+.shoot b{position:absolute;right:3px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:#fff;box-shadow:0 0 10px #fff,0 0 22px #D8BDFA}
+.wish{position:fixed;left:50%;bottom:calc(26px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:70;width:min(360px,calc(100% - 32px));padding:26px 22px 22px;border-radius:22px;background:rgba(19,11,34,.88);border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);text-align:center;display:flex;flex-direction:column;gap:10px;align-items:center;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.wish[hidden]{display:none}
+.wish .w1{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--lilac)}
+.wish h3{font-size:30px}
+.wish p{color:var(--mist-dim);font-size:15px}
+.wish .btn{margin-top:6px}
+.wish .x{position:absolute;top:8px;right:8px;width:34px;height:34px;border-radius:50%;border:0;background:transparent;color:var(--mist-dim);font-size:20px;cursor:pointer}
+.wish .x:hover{color:var(--mist)}
+@media(max-width:760px){.wish{bottom:calc(86px + env(safe-area-inset-bottom,0px))}}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Violet Cafebar & Lounge","slogan":"Locul tău preferat din Lotus.",
+ "address":{"@type":"PostalAddress","streetAddress":"Str. Nufărului 30, Lotus Center, parter","addressLocality":"Oradea","postalCode":"410583","addressCountry":"RO"},
+ "telephone":"+40756854086",
+ "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"22:00"}],
+ "acceptsReservations":"True","hasMenu":"https://www.smart-menu.ro/violet-bistro-caffe",
+ "amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true},{"@type":"LocationFeatureSpecification","name":"Prize la mese","value":true},{"@type":"LocationFeatureSpecification","name":"Câini acceptați, orice talie","value":true}],
+ "sameAs":["https://www.instagram.com/violetcafebar.oradea","https://www.tiktok.com/@violetcafebar"]}
+</script>
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+<canvas class="stars" id="stars" aria-hidden="true"></canvas>
+<div class="sun" id="sun" aria-hidden="true"></div>
+<div class="moon" id="moon" aria-hidden="true"></div>
+<div class="clouds" id="clouds" aria-hidden="true">
+  <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span><span class="cloud c4"></span><span class="cloud c5"></span>
+</div>
+<div class="bokeh" id="bokeh" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="./" class="brand">Violet<span>.</span></a>
+    <div class="nav-links">
+      <a href="#zi">Recomandări</a>
+      <a href="#polaroid">Galerie</a>
+      <a href="#signature">Signature</a>
+      <a href="#sezon">Sezonul ăsta</a>
+      <a href="#meniu">Meniu</a>
+      <a href="#ocazii">Ocazii</a>
+    </div>
+    <a href="#rezerva" class="btn btn-cta btn-sm">Rezervă o masă</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="arch">
+      <span class="eyebrow hero-eyebrow"><span>Cafebar &amp; lounge</span><span>Lotus Center, parter · Oradea</span></span>
+      <h1>Everything's better in <em>violet</em>.</h1>
+      <p class="tag">Locul tău preferat din Lotus.</p>
+      <div class="status" id="status"><span class="dot"></span><span id="statusText">Zilnic 9:00 – 22:00</span></div>
+      <p class="sub">Cafea dimineața, limonadă la prânz, spritz seara. Laptopul și cățelul sunt invitați la orice oră.</p>
+      <div class="hero-cta">
+        <a href="#rezerva" class="btn btn-cta">Rezervă o masă</a>
+        <a href="https://www.smart-menu.ro/violet-bistro-caffe" class="btn btn-line">Vezi meniul</a>
+      </div>
+      <div class="perks"><span class="perk">Wi-Fi și prize</span><span class="perk">Câini de orice talie</span><span class="perk">Rezervări pentru grupuri</span></div>
+    </div>
+    <div class="horizon"></div>
+  </div>
+</header>
+
+<div class="bands" aria-hidden="true">
+  <div class="band band-a"><div class="track">
+    <span>Chai latte</span><span>Ciocolată caldă</span><span>Flat White</span><span>Limonada Violet</span><span>Cappuccino Vienez</span><span>Violet Spritz</span><span>Irish Coffee</span>
+    <span>Chai latte</span><span>Ciocolată caldă</span><span>Flat White</span><span>Limonada Violet</span><span>Cappuccino Vienez</span><span>Violet Spritz</span><span>Irish Coffee</span>
+  </div></div>
+  <div class="band band-b"><div class="track">
+    <span>Ia-ți laptopul</span><span>Adu-ți cățelul</span><span>Sărbătorește aici</span><span>Lotus Center</span><span>Deschis 9–22</span><span>Rezervă o masă</span>
+    <span>Ia-ți laptopul</span><span>Adu-ți cățelul</span><span>Sărbătorește aici</span><span>Lotus Center</span><span>Deschis 9–22</span><span>Rezervă o masă</span>
+  </div></div>
+</div>
+
+<section id="zi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Recomandările zilei</span>
+      <h2>De la prima cafea <em>la ultimul pahar.</em></h2>
+      <p>Câte o alegere potrivită pentru fiecare moment al zilei.</p>
+    </div>
+    <div class="day">
+      <article class="shift panel s-morn" data-from="9" data-to="12">
+        <div class="mini"></div>
+        <div class="shift-body">
+          <span class="hours">09:00 – 12:00</span>
+          <h3>Dimineața</h3>
+          <p>Prima cafea a zilei, o masă la geam și Wi-Fi, dacă ai de lucru.</p>
+          <span class="rec">Recomandăm</span>
+          <ul class="picks">
+            <li><span>Flat White</span><span class="pr">22 lei</span></li>
+            <li><span>Cappuccino</span><span class="pr">16 lei</span></li>
+            <li><span>Cortado</span><span class="pr">13 lei</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="shift panel s-noon" data-from="12" data-to="18">
+        <div class="mini"></div>
+        <div class="shift-body">
+          <span class="hours">12:00 – 18:00</span>
+          <h3>După-amiaza</h3>
+          <p>Pentru o pauză mai lungă, cu o limonadă rece sau o ciocolată caldă.</p>
+          <span class="rec">Recomandăm</span>
+          <ul class="picks">
+            <li><span>Limonada Violet</span><span class="pr">25 lei</span></li>
+            <li><span>Ciocolată caldă</span><span class="pr">22 lei</span></li>
+            <li><span>Cappuccino Vienez</span><span class="pr">17 lei</span></li>
+          </ul>
+        </div>
+      </article>
+      <article class="shift panel s-eve" data-from="18" data-to="22">
+        <div class="mini"></div>
+        <div class="shift-body">
+          <span class="hours">18:00 – 22:00</span>
+          <h3>Seara</h3>
+          <p>Luminile se fac mov, iar meniul trece de la cafea la cocktailuri.</p>
+          <span class="rec">Recomandăm</span>
+          <ul class="picks">
+            <li><span>Irish Coffee</span><span class="pr">21 lei</span></li>
+            <li><span>Aperol Spritz</span><span class="pr">25 lei</span></li>
+            <li><span>Violet Spritz</span><span class="pr">25 lei</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="polaroid">
+  <div class="wrap">
+    <div class="sec-head center">
+      <h2>Violet <em>vibes.</em></h2>
+    </div>
+    <div class="pol-wall">
+      <figure class="pol p1"><div class="ph"><span class="lbl">dimineața</span><img src="images/polaroid-1.jpg" alt="Băutură pe bază de cafea la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>băuturi pe bază de cafea</figcaption><svg class="sticker" viewBox="0 0 40 40" width="58" height="58" style="right:-14px;bottom:72px;transform:rotate(14deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke" stroke-linecap="round"><path d="M20 38C20 28 21 18 24 4" fill="none" stroke="#7FA36B"/></g><path d="M20 38C20 28 21 18 24 4" fill="none" stroke="#7FA36B" stroke-width="2" stroke-linecap="round"/><path d="M20.5 30C16 28 14 25 14 22" fill="none" stroke="#7FA36B" stroke-width="1.8" stroke-linecap="round"/><g fill="#9D7BD8" stroke="#fff" stroke-width="1.4"><ellipse cx="24.5" cy="5" rx="2.8" ry="4" transform="rotate(15 24.5 5)"/><ellipse cx="21.6" cy="9" rx="2.8" ry="4" transform="rotate(-25 21.6 9)"/><ellipse cx="26.4" cy="10" rx="2.8" ry="4" transform="rotate(35 26.4 10)"/><ellipse cx="22" cy="14.5" rx="2.8" ry="4" transform="rotate(-25 22 14.5)"/><ellipse cx="25.8" cy="15.5" rx="2.8" ry="4" transform="rotate(35 25.8 15.5)"/><ellipse cx="21.4" cy="20" rx="2.8" ry="4" transform="rotate(-25 21.4 20)"/><ellipse cx="25" cy="21" rx="2.8" ry="4" transform="rotate(35 25 21)"/></g></svg><svg class="sticker" viewBox="0 0 40 40" width="26" height="26" style="left:-10px;top:24px;transform:rotate(-8deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#F3E6CF" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg></figure>
+      <figure class="pol p2"><div class="ph"><span class="lbl">signature</span><img src="images/polaroid-2.jpg" alt="Limonada Violet" loading="lazy" onerror="this.remove()"></div><figcaption>limonada violet</figcaption><svg class="sticker" viewBox="0 0 40 40" width="46" height="46" style="right:-16px;top:-14px;transform:rotate(18deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"><circle cx="20" cy="20" r="16" fill="#F4D23C"/></g><circle cx="20" cy="20" r="16" fill="#F4D23C"/><circle cx="20" cy="20" r="13.5" fill="#FFF6D2"/><circle cx="20" cy="20" r="12" fill="#FBE36A"/><g stroke="#FFF8DC" stroke-width="1.4" stroke-linecap="round"><path d="M20 20V8.5"/><path d="M20 20L30 14.3"/><path d="M20 20L30 25.7"/><path d="M20 20V31.5"/><path d="M20 20L10 25.7"/><path d="M20 20L10 14.3"/></g></svg><svg class="sticker" viewBox="0 0 40 40" width="22" height="22" style="left:8px;bottom:80px;transform:rotate(10deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#D8BDFA" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg></figure>
+      <figure class="pol p3"><div class="ph"><span class="lbl">prânz</span><img src="images/polaroid-3.jpg" alt="Limonade cu aloe la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>limonade cu aloe</figcaption><svg class="sticker" viewBox="0 0 40 40" width="40" height="40" style="left:-14px;bottom:70px;transform:rotate(-12deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"><g fill="#B48AE8"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g></g><g fill="#B48AE8"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g><circle cx="20" cy="20" r="4.2" fill="#F7D978"/></svg><svg class="sticker" viewBox="0 0 40 40" width="28" height="28" style="left:16px;bottom:58px;transform:rotate(20deg)" aria-hidden="true"><g stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"><g fill="#D9B8F5"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g></g><g fill="#D9B8F5"><circle cx="20" cy="11" r="7"/><circle cx="28.6" cy="17.2" r="7"/><circle cx="25.3" cy="27.3" r="7"/><circle cx="14.7" cy="27.3" r="7"/><circle cx="11.4" cy="17.2" r="7"/></g><circle cx="20" cy="20" r="4.2" fill="#F7D978"/></svg></figure>
+      <figure class="pol p4"><div class="ph"><span class="lbl">după-amiaza</span><img src="images/polaroid-4.jpg" alt="Cocktail pe terasă la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>cocktails &amp; mocktails</figcaption><svg class="sticker" viewBox="0 0 40 40" width="36" height="36" style="right:-12px;top:30px;transform:rotate(14deg)" aria-hidden="true"><path d="M20 34C9 26 4 20 4 13.5C4 8.5 8 5 12.5 5C16 5 18.6 7 20 9.6C21.4 7 24 5 27.5 5C32 5 36 8.5 36 13.5C36 20 31 26 20 34Z" fill="#F4A8C8" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/><path d="M11 12.5C11.5 10.5 13 9.5 14.5 9.5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".8"/></svg><svg class="sticker" viewBox="0 0 40 40" width="38" height="38" style="left:-12px;bottom:76px;transform:rotate(-10deg)" aria-hidden="true"><g fill="#fff" stroke="#E9DCF7" stroke-width="1"><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(0 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(45 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(90 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(135 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(180 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(225 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(270 20 20)"/><ellipse cx="20" cy="9" rx="4" ry="8" transform="rotate(315 20 20)"/></g><circle cx="20" cy="20" r="5" fill="#F7C948" stroke="#fff" stroke-width="2"/></svg></figure>
+      <figure class="pol p5"><div class="ph"><span class="lbl">seara</span><img src="images/polaroid-5.jpg" alt="Cheesecake cu sos de fructe de pădure, prăjituri la Violet" loading="lazy" onerror="this.remove()"></div><figcaption>prăjituri</figcaption><svg class="sticker" viewBox="0 0 40 40" width="36" height="36" style="right:-10px;top:22px;transform:rotate(-10deg)" aria-hidden="true"><path d="M26 4A16 16 0 1 0 36 26A13 13 0 1 1 26 4Z" fill="#F3E6CF" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg><svg class="sticker" viewBox="0 0 40 40" width="18" height="18" style="right:22px;top:8px;transform:rotate(0deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#F3E6CF" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg><svg class="sticker" viewBox="0 0 40 40" width="22" height="22" style="left:-8px;bottom:84px;transform:rotate(16deg)" aria-hidden="true"><path d="M20 2C21.6 13.5 26.5 18.4 38 20C26.5 21.6 21.6 26.5 20 38C18.4 26.5 13.5 21.6 2 20C13.5 18.4 18.4 13.5 20 2Z" fill="#D8BDFA" stroke="#fff" stroke-width="3" stroke-linejoin="round" paint-order="stroke"/></svg></figure>
+    </div>
+  </div>
+</section>
+
+<section id="signature">
+  <div class="wrap sig">
+    <div class="glass-stage panel">
+      <svg class="glass-svg" id="glassSvg" viewBox="0 0 220 320" role="img" aria-label="Pahar înalt cu limonadă de butterfly pea, gheață și pai, care devine mov când adaugi lămâie">
+        <defs>
+          <!-- cavitatea interioară a paharului -->
+          <clipPath id="cavity"><path d="M42 44 L51 252 Q52 259 60 259 L160 259 Q168 259 169 252 L178 44 Z"/></clipPath>
+          <clipPath id="liquidClip"><rect x="0" y="92" width="220" height="200"/></clipPath>
+          <clipPath id="bloomClip"><circle class="bloom" cx="158" cy="92" r="230"/></clipPath>
+          <linearGradient id="blueLiq" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7C96F7"/><stop offset=".45" stop-color="#4766DE"/><stop offset="1" stop-color="#26348F"/>
+          </linearGradient>
+          <linearGradient id="violetLiq" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#E3A6F2"/><stop offset=".45" stop-color="#A45CD8"/><stop offset="1" stop-color="#5A2394"/>
+          </linearGradient>
+          <!-- refracție: margini mai închise, centru mai luminos -->
+          <linearGradient id="refract" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#000" stop-opacity=".38"/><stop offset=".18" stop-color="#000" stop-opacity="0"/>
+            <stop offset=".55" stop-color="#fff" stop-opacity=".1"/><stop offset=".85" stop-color="#000" stop-opacity="0"/>
+            <stop offset="1" stop-color="#000" stop-opacity=".42"/>
+          </linearGradient>
+          <linearGradient id="glassBody" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset=".12" stop-color="#fff" stop-opacity=".04"/>
+            <stop offset=".88" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#fff" stop-opacity=".14"/>
+          </linearGradient>
+          <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".2" stop-color="#fff" stop-opacity=".75"/>
+            <stop offset=".75" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="baseGlass" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".1"/><stop offset=".6" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity=".08"/>
+          </linearGradient>
+          <linearGradient id="iceG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".5" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/>
+          </linearGradient>
+          <radialGradient id="pulp" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#FFF7C8"/><stop offset=".85" stop-color="#FBE36A"/><stop offset="1" stop-color="#F2CF3A"/>
+          </radialGradient>
+          <radialGradient id="glowB"><stop offset="0" stop-color="#4C6BE6" stop-opacity=".55"/><stop offset="1" stop-color="#4C6BE6" stop-opacity="0"/></radialGradient>
+          <radialGradient id="glowV"><stop offset="0" stop-color="#A65FE0" stop-opacity=".6"/><stop offset="1" stop-color="#A65FE0" stop-opacity="0"/></radialGradient>
+          <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+          <pattern id="stripes" patternUnits="userSpaceOnUse" width="9" height="14" patternTransform="rotate(-28)">
+            <rect width="9" height="14" fill="#FBF6FF"/><rect width="9" height="6" fill="#8E5BD6"/>
+          </pattern>
+          <linearGradient id="strawShade" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset=".35" stop-color="#fff" stop-opacity=".35"/>
+            <stop offset=".6" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/>
+          </linearGradient>
+          <!-- paiul: tub drept, cu dungi, de la fundul paharului până deasupra buzei -->
+          <g id="straw" transform="translate(121 254) rotate(7)">
+            <rect x="-4.5" y="-252" width="9" height="252" rx="4.5" fill="url(#stripes)"/>
+            <rect x="-4.5" y="-252" width="9" height="252" rx="4.5" fill="url(#strawShade)"/>
+            <ellipse cx="0" cy="-251" rx="4.5" ry="1.8" fill="#3B2161" opacity=".55"/>
+          </g>
+          <clipPath id="aboveLiquid"><rect x="0" y="-40" width="220" height="132"/></clipPath>
+        </defs>
+
+        <!-- umbră și lumina colorată aruncată pe masă -->
+        <ellipse cx="110" cy="288" rx="78" ry="9" fill="#05020C" opacity=".55" filter="url(#soft)"/>
+        <ellipse cx="128" cy="292" rx="70" ry="12" fill="url(#glowB)"/>
+        <ellipse class="glow-violet" cx="128" cy="292" rx="70" ry="12" fill="url(#glowV)"/>
+
+        <!-- paiul, partea de deasupra lichidului -->
+        <g clip-path="url(#aboveLiquid)"><use href="#straw"/></g>
+
+        <!-- corpul paharului -->
+        <path d="M36 40 L46 266 Q47 282 62 282 L158 282 Q173 282 174 266 L184 40 Z" fill="url(#glassBody)"/>
+
+        <!-- lichidul -->
+        <g clip-path="url(#cavity)">
+          <g clip-path="url(#liquidClip)">
+            <rect x="0" y="80" width="220" height="200" fill="url(#blueLiq)"/>
+            <g class="violet" clip-path="url(#bloomClip)">
+              <rect x="0" y="80" width="220" height="200" fill="url(#violetLiq)"/>
+            </g>
+            <!-- paiul văzut prin lichid, ușor deplasat (refracție) -->
+            <use href="#straw" transform="translate(-3 0)" opacity=".5"/>
+            <!-- gheață scufundată -->
+            <g opacity=".85">
+              <rect x="62" y="150" width="40" height="36" rx="7" transform="rotate(-14 82 168)" fill="url(#iceG)" stroke="#fff" stroke-opacity=".45"/>
+              <rect x="112" y="186" width="34" height="31" rx="6" transform="rotate(20 129 201)" fill="url(#iceG)" stroke="#fff" stroke-opacity=".35"/>
+              <rect x="74" y="208" width="30" height="27" rx="6" transform="rotate(8 89 221)" fill="url(#iceG)" stroke="#fff" stroke-opacity=".3"/>
+            </g>
+            <!-- bule -->
+            <circle class="bub" cx="72" cy="250" r="2.2" fill="#fff" style="animation-delay:0s"/>
+            <circle class="bub" cx="104" cy="252" r="1.6" fill="#fff" style="animation-delay:1.2s"/>
+            <circle class="bub" cx="140" cy="250" r="2" fill="#fff" style="animation-delay:2.1s"/>
+            <circle class="bub" cx="156" cy="252" r="1.4" fill="#fff" style="animation-delay:3.3s"/>
+            <circle class="bub" cx="88" cy="252" r="1.3" fill="#fff" style="animation-delay:.6s"/>
+            <rect x="0" y="80" width="220" height="200" fill="url(#refract)"/>
+          </g>
+          <!-- suprafața lichidului (menisc) -->
+          <ellipse cx="110" cy="92" rx="67" ry="6.5" fill="#fff" opacity=".22"/>
+          <ellipse cx="110" cy="92" rx="67" ry="6.5" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1"/>
+          <!-- cuburi care plutesc la suprafață -->
+          <g class="ice-float">
+            <rect x="58" y="72" width="44" height="38" rx="8" transform="rotate(12 80 91)" fill="url(#iceG)" stroke="#fff" stroke-opacity=".6"/>
+            <path d="M66 78 L92 84" stroke="#fff" stroke-opacity=".7" stroke-width="1.5" stroke-linecap="round" transform="rotate(12 80 91)"/>
+          </g>
+          <g class="ice-float" style="animation-delay:-3s">
+            <rect x="100" y="76" width="36" height="32" rx="7" transform="rotate(-16 118 92)" fill="url(#iceG)" stroke="#fff" stroke-opacity=".55"/>
+          </g>
+          <!-- picături de lămâie -->
+          <circle class="drop" cx="162" cy="62" r="2.4" fill="#FFF3A6"/>
+        </g>
+
+        <!-- baza groasă de sticlă -->
+        <path d="M51 259 L169 259 L174 266 Q173 282 158 282 L62 282 Q47 282 46 266 Z" fill="url(#baseGlass)"/>
+        <ellipse cx="110" cy="260" rx="59" ry="3.5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+
+        <!-- conturul paharului și reflexii -->
+        <path d="M36 40 L46 266 Q47 282 62 282 L158 282 Q173 282 174 266 L184 40" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.6"/>
+        <path d="M50 58 L58 248" stroke="url(#hl)" stroke-width="7" stroke-linecap="round"/>
+        <path d="M63 70 L67 160" stroke="url(#hl)" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+        <path d="M170 62 L163 236" stroke="url(#hl)" stroke-width="2.4" stroke-linecap="round" opacity=".55"/>
+        <!-- condens -->
+        <g fill="#fff" opacity=".35">
+          <circle cx="60" cy="200" r="1.4"/><circle cx="66" cy="214" r="1"/><circle cx="150" cy="190" r="1.3"/><circle cx="158" cy="222" r="1.6"/>
+          <circle cx="144" cy="236" r="1"/><circle cx="74" cy="236" r="1.5"/><circle cx="120" cy="244" r="1.1"/><circle cx="96" cy="230" r=".9"/>
+        </g>
+        <!-- buza paharului -->
+        <ellipse cx="110" cy="40" rx="74" ry="7.5" fill="#fff" fill-opacity=".05" stroke="#fff" stroke-opacity=".75" stroke-width="1.6"/>
+        <path d="M44 41 Q110 50 176 41" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="1"/>
+
+        <!-- rondeaua de lămâie, pusă pe margine -->
+        <g class="lemon-g">
+          <circle cx="172" cy="40" r="27" fill="#F4D23C"/>
+          <circle cx="172" cy="40" r="24.5" fill="#FFF6D2"/>
+          <circle cx="172" cy="40" r="22" fill="url(#pulp)"/>
+          <g stroke="#FFF8DC" stroke-width="1.6" stroke-linecap="round">
+            <path d="M172 40 L172 19"/><path d="M172 40 L190 29.5"/><path d="M172 40 L190 50.5"/>
+            <path d="M172 40 L172 61"/><path d="M172 40 L154 50.5"/><path d="M172 40 L154 29.5"/>
+          </g>
+          <circle cx="172" cy="40" r="3" fill="#FFF8DC"/>
+          <!-- tăietura care încalecă buza paharului -->
+          <rect x="169.5" y="44" width="5" height="26" fill="#1C1131" opacity=".0"/>
+        </g>
+      </svg>
+      <button class="btn btn-cta" id="lemonBtn" type="button">Adaugă lămâia</button>
+      <p class="glass-note" id="glassNote">Butterfly pea e albastru. Până întâlnește lămâia.</p>
+    </div>
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Made in violet</span>
+        <h2>Sip the <em>violet</em>.</h2>
+        <p>Totul pornește de la o floare albastră care se colorează în mov la prima picătură de lămâie.</p>
+      </div>
+      <div class="sig-list">
+        <div class="sig-item panel">
+          <div class="sig-top"><h3>Limonada Violet</h3><span class="pr">25 lei</span></div>
+          <p>Aloe, soc, lămâie, infuzie de butterfly pea.</p>
+          <span class="pill">De zi</span>
+        </div>
+        <div class="sig-item panel">
+          <div class="sig-top"><h3>Violet Spritz</h3><span class="pr">25 lei</span></div>
+          <p>Butterfly pea, prosecco, apă minerală.</p>
+          <span class="pill">De seară</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sezon">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" id="seasonEyebrow">Recomandarea sezonului</span>
+      <h2 id="seasonTitle">Sezonul rece, <em>în variantă caldă.</em></h2>
+      <p id="seasonLead">Ce recomandăm cât e frig afară.</p>
+    </div>
+    <div class="cups" id="cups"></div>
+  </div>
+</section>
+
+<section id="meniu">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Din meniu</span>
+      <h2>Preferatele <em>casei.</em></h2>
+      <p>O selecție din meniu. Meniul complet, cu vinuri și beri, îl găsești online.</p>
+    </div>
+    <div class="panel menu-panel">
+      <div class="menu-grid">
+        <div class="menu-col">
+          <h3>Cafea &amp; specialități</h3>
+          <div class="mi"><span class="nm">Cappuccino</span><span class="fill"></span><span class="pr">16 lei</span></div>
+          <div class="mi"><span class="nm">Flat White</span><span class="fill"></span><span class="pr">22 lei</span></div>
+          <div class="mi"><span class="nm">Cappuccino cu cremă de fistic</span><span class="fill"></span><span class="pr">24 lei</span></div>
+          <div class="mi"><span class="nm">Latte cu caramel sărat</span><span class="fill"></span><span class="pr">22 lei</span></div>
+          <div class="mi"><span class="nm">Tiramisu Latte</span><span class="fill"></span><span class="pr">22 lei</span></div>
+        </div>
+        <div class="menu-col">
+          <h3>Limonade &amp; ceaiuri</h3>
+          <div class="mi"><span class="nm">Limonada Violet<em>signature</em></span><span class="fill"></span><span class="pr">25 lei</span></div>
+          <div class="mi"><span class="nm">Limonadă Zmeură</span><span class="fill"></span><span class="pr">25 lei</span></div>
+          <div class="mi"><span class="nm">Limonadă Mentă &amp; Ghimbir</span><span class="fill"></span><span class="pr">25 lei</span></div>
+          <div class="mi"><span class="nm">Ceai Aloe Violet</span><span class="fill"></span><span class="pr">21 lei</span></div>
+          <div class="mi"><span class="nm">Socată artizanală</span><span class="fill"></span><span class="pr">19 lei</span></div>
+        </div>
+        <div class="menu-col">
+          <h3>Cocktailuri</h3>
+          <div class="mi"><span class="nm">Violet Spritz<em>signature</em></span><span class="fill"></span><span class="pr">25 lei</span></div>
+          <div class="mi"><span class="nm">Aperol Spritz</span><span class="fill"></span><span class="pr">25 lei</span></div>
+          <div class="mi"><span class="nm">Hugo</span><span class="fill"></span><span class="pr">27 lei</span></div>
+          <div class="mi"><span class="nm">Pornstar Martini</span><span class="fill"></span><span class="pr">30 lei</span></div>
+          <div class="mi"><span class="nm">Gin Mare &amp; Tonic</span><span class="fill"></span><span class="pr">35 lei</span></div>
+        </div>
+        <div class="menu-col">
+          <h3>Deserturi</h3>
+          <div class="mi"><span class="nm">Lava Cake</span><span class="fill"></span><span class="pr">23 lei</span></div>
+          <div class="mi"><span class="nm">Cheesecake</span><span class="fill"></span><span class="pr">21 lei</span></div>
+          <div class="mi"><span class="nm">Tartă cu pere &amp; ciocolată</span><span class="fill"></span><span class="pr">18 lei</span></div>
+        </div>
+      </div>
+      <div class="menu-foot">
+        <a href="https://www.smart-menu.ro/violet-bistro-caffe" class="btn btn-line">Deschide meniul complet</a>
+        <p>Sau scanează codul QR de pe masă.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lights-sec" id="lumini">
+  <svg class="string" id="string" viewBox="0 0 1000 120" aria-hidden="true">
+    <path class="wire" d="M-20 14 Q500 150 1020 14"/>
+  </svg>
+  <div class="wrap">
+    <p class="neon" aria-label="Violet">Violet</p>
+    <p class="neon-reflect" aria-hidden="true">Violet</p>
+    <p class="neon-sub">See you after sunset.</p>
+  </div>
+</section>
+
+<section id="ocazii">
+  <div class="wrap">
+    <div class="panel occ">
+      <div>
+        <span class="eyebrow">Ocazii speciale</span>
+        <h2 style="margin-top:14px">Pentru serile <em>care contează.</em></h2>
+        <p class="lead">Zile de naștere, ieșiri cu prietenii sau o seară în doi. Spune-ne ce sărbătorești și pregătim masa.</p>
+        <div class="chips" id="chips" role="group" aria-label="Alege ocazia">
+          <button type="button" class="chip" aria-pressed="true" data-k="bday">Zi de naștere</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="girls">Ieșire cu prietenele</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="old">Reîntâlnire</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="work">After-work</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="date">Întâlnire în doi</button>
+          <button type="button" class="chip" aria-pressed="false" data-k="other">Altă ocazie</button>
+        </div>
+      </div>
+      <div class="occ-card" aria-live="polite">
+        <span class="k" id="occKey">Zi de naștere</span>
+        <h3 id="occTitle">O zi de naștere în nuanțe de mov.</h3>
+        <p id="occText">Spune-ne câți sunteți și la ce oră, iar noi pregătim masa.</p>
+        <a href="#rezerva" class="btn btn-cta" id="occBtn">Rezervă pentru ziua ta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rezerva">
+  <div class="wrap book">
+    <div>
+      <span class="eyebrow">Rezervări</span>
+      <h2 style="margin-top:14px">Ține-ți <em>o masă.</em></h2>
+      <p class="book-lead">Sună-ne, spune câți sunteți și la ce oră. Pentru grupuri mai mari, sună cu o zi înainte.</p>
+      <p class="picked" id="picked"></p>
+      <div class="phone">
+        <span class="num" id="phoneNum">0756 854 086</span>
+        <div class="row">
+          <a href="tel:+40756854086" class="btn btn-cta">Sună acum</a>
+          <button type="button" class="btn btn-line" id="copyBtn">Copiază numărul</button>
+          <a href="https://www.instagram.com/violetcafebar.oradea" class="btn btn-line">Scrie-ne pe Instagram</a>
+        </div>
+        <span class="copied" id="copied" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="facts panel">
+      <div class="fact"><span class="k">Program</span><span class="v">Zilnic, 9:00 – 22:00</span></div>
+      <div class="fact"><span class="k">Adresă</span><span class="v">Lotus Center, la parter<br><small>Str. Nufărului 30, 410583 Oradea</small><br><a href="https://share.google/y9uC9LONoNuDULQaz">Deschide în Google Maps</a></span></div>
+      <div class="fact"><span class="k">Laptop</span><span class="v">Wi-Fi și prize la mese</span></div>
+      <div class="fact"><span class="k">Câini</span><span class="v">De orice talie. Bolul cu apă e din partea casei.</span></div>
+      <div class="fact"><span class="k">Instagram</span><span class="v"><a href="https://www.instagram.com/violetcafebar.oradea">@violetcafebar.oradea</a></span></div>
+      <div class="fact"><span class="k">TikTok</span><span class="v"><a href="https://www.tiktok.com/@violetcafebar">@violetcafebar</a></span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div class="foot-brand">Violet<span>.</span></div>
+    <p class="foot-night">S-a făcut seară. Ne vedem mâine la 9.</p>
+    <div class="foot-links">
+      <a href="#zi">Recomandări</a>
+      <a href="#meniu">Meniu</a>
+      <a href="#ocazii">Ocazii</a>
+      <a href="#rezerva">Rezervări</a>
+      <a href="https://www.smart-menu.ro/violet-bistro-caffe">Meniul complet</a>
+      <a href="faq.html">Întrebări frecvente</a>
+    </div>
+    <p class="foot-copy">Violet Cafebar &amp; Lounge · Lotus Center, Oradea · © 2026</p>
+  </div>
+</footer>
+
+<div class="wish" id="wish" role="dialog" aria-label="Pune o dorință" hidden>
+  <button type="button" class="x" id="wishClose" aria-label="Închide">×</button>
+  <span class="w1">Ai prins-o</span>
+  <h3>Pune o dorință.</h3>
+  <p>Pe cea cu masa ți-o îndeplinim noi.</p>
+  <a href="#rezerva" class="btn btn-cta" id="wishBtn">O masă la Violet</a>
+</div>
+
+<div class="dock"><a href="#rezerva" class="btn btn-cta">Rezervă o masă</a></div>
+
+<script>
+/* ===== Cerul: scroll de la răsărit la noapte ===== */
+(function(){
+  const STOPS = [ // p, sus, mijloc, orizont, nori, opacitate nori
+    [0.00,'#221544','#6A3F8E','#F0A07F','#F6C4CB',.55],
+    [0.30,'#2F3486','#6E66BD','#C9A7E3','#EDE6FB',.50],
+    [0.62,'#2A1547','#7A3784','#E5858C','#EBA3B7',.42],
+    [0.85,'#110A22','#211338','#3A1E55','#4A3770',.22],
+    [1.00,'#0A0616','#120B24','#1C1236','#2F2550',.12]
+  ];
+  const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+  const mix=(a,b,t)=>{const A=hex(a),B=hex(b);return 'rgb('+A.map((v,i)=>Math.round(v+(B[i]-v)*t)).join(',')+')'};
+  const lerp=(a,b,t)=>a+(b-a)*t;
+  const smooth=(a,b,x)=>{const t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t)};
+  const root=document.documentElement, sun=document.getElementById('sun'), moon=document.getElementById('moon'),
+        clouds=document.getElementById('clouds'), stars=document.getElementById('stars');
+
+  function sky(p){
+    let i=0; while(i<STOPS.length-2 && p>STOPS[i+1][0]) i++;
+    const a=STOPS[i], b=STOPS[i+1], t=Math.min(1,Math.max(0,(p-a[0])/(b[0]-a[0])));
+    root.style.setProperty('--s1',mix(a[1],b[1],t));
+    root.style.setProperty('--s2',mix(a[2],b[2],t));
+    root.style.setProperty('--s3',mix(a[3],b[3],t));
+    root.style.setProperty('--cloud',mix(a[4],b[4],t));
+    root.style.setProperty('--cloud-o',lerp(a[5],b[5],t).toFixed(3));
+    // soarele: răsare, urcă, apune spre dreapta
+    const vh=innerHeight, vw=innerWidth;
+    let y, x;
+    if(p<.3){ const k=smooth(0,.3,p); y=lerp(vh*.86,vh*.2,k); x=0; }
+    else { const k=smooth(.3,.78,p); y=lerp(vh*.2,vh*1.15,k); x=lerp(0,vw*.3,k); }
+    sun.style.transform=`translate(${x}px,${y-75}px)`;
+    sun.style.opacity=(1-smooth(.68,.8,p)).toFixed(3);
+    moon.style.opacity=smooth(.76,.92,p).toFixed(3);
+    stars.style.opacity=smooth(.62,.95,p).toFixed(3);
+    clouds.style.transform=`translateY(${-p*18}vh)`;
+    nightNow=p>.7;
+    root.style.setProperty('--bokeh',smooth(.5,.78,p).toFixed(3));
+  }
+  window.isNight=()=>nightNow; let nightNow=false;
+  let ticking=false;
+  function onScroll(){
+    if(ticking) return; ticking=true;
+    requestAnimationFrame(()=>{
+      const max=Math.max(1,document.documentElement.scrollHeight-innerHeight);
+      sky(Math.min(1,Math.max(0,scrollY/max))); ticking=false;
+    });
+  }
+  addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',()=>{sizeStars();onScroll();});
+
+  // stele
+  const ctx=stars.getContext('2d'); let pts=[];
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function sizeStars(){
+    const d=Math.min(2,devicePixelRatio||1);
+    stars.width=innerWidth*d; stars.height=innerHeight*d; ctx.setTransform(d,0,0,d,0,0);
+    const n=Math.round(innerWidth*innerHeight/5200);
+    pts=Array.from({length:n},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight*.85,r:Math.random()*1.3+.3,ph:Math.random()*6.28,sp:.6+Math.random()*1.6}));
+  }
+  function draw(t){
+    if(+stars.style.opacity>0.01 || !t){
+      ctx.clearRect(0,0,innerWidth,innerHeight);
+      for(const s of pts){
+        const a=reduce?.8:.45+.55*Math.abs(Math.sin(s.ph+(t||0)/1000*s.sp));
+        ctx.globalAlpha=a; ctx.fillStyle='#F3ECFF';
+        ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,6.283); ctx.fill();
+      }
+    }
+    if(!reduce) requestAnimationFrame(draw);
+  }
+  sizeStars(); draw(0); onScroll();
+})();
+
+/* ===== Sezoane: schimbă doar conținutul de aici ===== */
+const SEASONS = {
+  rece: {
+    months:[10,11,12,1,2,3],
+    eyebrow:'Recomandarea sezonului',
+    title:'Sezonul rece, <em>în variantă caldă.</em>',
+    lead:'Ce recomandăm cât e frig afară.',
+    items:[
+      {n:'Chai Latte', p:'18 lei', hot:true},
+      {n:'Ciocolată caldă albă', p:'22 lei', hot:true},
+      {n:'Ciocolată caldă neagră', p:'22 lei', hot:true},
+      {n:'Cappuccino Vienez', p:'17 lei', hot:true},
+      {n:'Irish Coffee', p:'21 lei', hot:true}
+    ]
+  },
+  cald: {
+    months:[4,5,6,7,8,9],
+    eyebrow:'Recomandarea sezonului',
+    title:'Sezonul cald, <em>în variantă rece.</em>',
+    lead:'Ce recomandăm cât e cald afară.',
+    items:[
+      {n:'Limonada Violet', p:'25 lei'},
+      {n:'Limonadă Zmeură', p:'25 lei'},
+      {n:'Limonadă Mentă & Ghimbir', p:'25 lei'},
+      {n:'Iced Matcha', p:'19 lei'},
+      {n:'Violet Spritz', p:'25 lei'}
+    ]
+  }
+};
+(function(){
+  const m=new Date().getMonth()+1;
+  const s=Object.values(SEASONS).find(x=>x.months.includes(m)&&x.items.length)||Object.values(SEASONS)[0];
+  document.getElementById('seasonEyebrow').textContent=s.eyebrow;
+  document.getElementById('seasonTitle').innerHTML=s.title;
+  document.getElementById('seasonLead').textContent=s.lead;
+  document.getElementById('cups').innerHTML=s.items.map(i=>`
+    <div class="cup panel">${i.hot?'<span class="steam" aria-hidden="true"><i></i><i></i><i></i></span>':''}
+      <h3>${i.n}</h3><span class="pr">${i.p}</span></div>`).join('');
+})();
+
+/* ===== Deschis acum + tura curentă (ora din Oradea) ===== */
+(function(){
+  let h,min;
+  try{
+    const parts=new Intl.DateTimeFormat('ro-RO',{timeZone:'Europe/Bucharest',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    h=+parts.find(p=>p.type==='hour').value; min=+parts.find(p=>p.type==='minute').value;
+  }catch(e){const d=new Date();h=d.getHours();min=d.getMinutes();}
+  const t=h+min/60, open=t>=9&&t<22;
+  const st=document.getElementById('status'), tx=document.getElementById('statusText');
+  if(open) tx.textContent='Deschis acum · până la 22:00';
+  else { st.classList.add('closed'); tx.textContent='Închis acum · deschidem la 9:00'; }
+  document.querySelectorAll('.shift').forEach(el=>{
+    if(open&&t>=+el.dataset.from&&t<+el.dataset.to){
+      el.classList.add('is-now');
+      el.insertAdjacentHTML('afterbegin','<span class="now-badge">Acum</span>');
+    }
+  });
+})();
+
+/* ===== Ocazii ===== */
+(function(){
+  const OCC={
+    bday:{k:'Zi de naștere',t:'O zi de naștere în nuanțe de mov.',d:'Spune-ne câți sunteți și la ce oră, iar noi pregătim masa.',b:'Rezervă pentru ziua ta'},
+    girls:{k:'Ieșire cu prietenele',t:'O seară doar pentru voi.',d:'O masă pentru toate, băuturi signature și timp pentru povești.',b:'Rezervă pentru voi'},
+    old:{k:'Reîntâlnire',t:'Pentru prietenii pe care nu i-ai mai văzut de mult.',d:'Rezervă din timp, ca să vă rămână tot timpul pentru povești.',b:'Rezervă pentru reîntâlnire'},
+    work:{k:'After-work',t:'Finalul perfect al unei zile de lucru.',d:'O masă pentru toată echipa, de la cafea la cocktailuri.',b:'Rezervă pentru echipă'},
+    date:{k:'Întâlnire în doi',t:'O seară în doi, la lumină caldă.',d:'O masă liniștită, unde conversația curge firesc.',b:'Rezervă pentru doi'},
+    other:{k:'Altă ocazie',t:'Orice motiv e unul bun.',d:'Spune-ne ce sărbătorești când suni și ne ocupăm de restul.',b:'Rezervă o masă'}
+  };
+  let current='bday';
+  const chips=document.querySelectorAll('.chip');
+  const set=k=>{
+    current=k; const o=OCC[k];
+    chips.forEach(c=>c.setAttribute('aria-pressed',c.dataset.k===k?'true':'false'));
+    document.getElementById('occKey').textContent=o.k;
+    document.getElementById('occTitle').textContent=o.t;
+    document.getElementById('occText').textContent=o.d;
+    document.getElementById('occBtn').textContent=o.b;
+  };
+  chips.forEach(c=>c.addEventListener('click',()=>set(c.dataset.k)));
+  document.getElementById('occBtn').addEventListener('click',()=>{
+    document.getElementById('picked').textContent='Ocazia: '+OCC[current].k.toLowerCase()+'. Spune-ne asta când suni.';
+  });
+})();
+
+/* ===== Polaroidurile se leagănă când ajungi la ele ===== */
+(function(){
+  const wall=document.querySelector('.pol-wall');
+  if(!wall||!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){wall.classList.remove('swing');void wall.offsetWidth;wall.classList.add('swing');}
+  }),{threshold:.35}).observe(wall);
+  wall.addEventListener('animationend',e=>{if(e.target.classList.contains('p3'))wall.classList.remove('swing');});
+})();
+
+/* ===== Bokeh: luminile cafenelei, neclare, seara ===== */
+(function(){
+  const box=document.getElementById('bokeh');
+  const C=['255,226,184','255,214,170','203,160,245','176,120,236','244,170,200','255,240,215'];
+  const n=innerWidth<700?12:20; let h='';
+  for(let i=0;i<n;i++){
+    const sz=Math.round(30+Math.random()*120), c=C[i%C.length], a=(.25+Math.random()*.35).toFixed(2);
+    const x=(Math.random()*100).toFixed(1), y=(20+Math.random()*75).toFixed(1);
+    h+=`<span class="bk" style="width:${sz}px;height:${sz}px;left:${x}%;top:${y}%;--b:${(sz/14).toFixed(1)}px;--d:${20+Math.random()*25}s;--dl:-${(Math.random()*20).toFixed(1)}s;--tx:${Math.round(Math.random()*60-30)}px;--ty:${Math.round(-20-Math.random()*40)}px;background:radial-gradient(circle,rgba(${c},${a}) 0%,rgba(${c},${(a*.6).toFixed(2)}) 55%,rgba(${c},0) 72%)"></span>`;
+  }
+  box.innerHTML=h;
+})();
+
+/* ===== Beculețe + neon care se aprind la apus ===== */
+(function(){
+  const svg=document.getElementById('string'), NS='http://www.w3.org/2000/svg', N=22;
+  const P0=[-20,14],P1=[500,150],P2=[1020,14];
+  for(let i=0;i<N;i++){
+    const t=.04+i*(.92/(N-1)), u=1-t;
+    const x=u*u*P0[0]+2*u*t*P1[0]+t*t*P2[0], y=u*u*P0[1]+2*u*t*P1[1]+t*t*P2[1];
+    const g=document.createElementNS(NS,'g');
+    g.innerHTML=`<rect class="cap" x="${x-3}" y="${y}" width="6" height="6" rx="1.5"/><ellipse class="bulb" cx="${x}" cy="${y+14}" rx="5.2" ry="7.5" style="transition-delay:${i*75}ms"/>`;
+    svg.appendChild(g);
+  }
+  const sec=document.getElementById('lumini');
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){sec.classList.add('lit');io.disconnect();}})},{threshold:.45});
+    io.observe(sec);
+  } else sec.classList.add('lit');
+})();
+
+/* ===== Steaua căzătoare (doar noaptea) ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const wish=document.getElementById('wish');
+  let busy=false;
+  function shoot(){
+    if(busy||!window.isNight()||!wish.hidden) return;
+    busy=true;
+    const el=document.createElement('button');
+    el.type='button'; el.className='shoot'; el.setAttribute('aria-label','Stea căzătoare. Apasă ca să pui o dorință');
+    el.innerHTML='<i></i><b></b>';
+    const vw=innerWidth, vh=innerHeight;
+    const x0=vw*(.55+Math.random()*.35), y0=vh*(.06+Math.random()*.2);
+    const dx=-vw*(.32+Math.random()*.18), dy=vh*(.16+Math.random()*.12), a=Math.atan2(dy,dx);
+    el.style.left=(x0-160)+'px'; el.style.top=(y0-18)+'px';
+    document.body.appendChild(el);
+    const anim=el.animate([
+      {transform:`translate(0,0) rotate(${a}rad)`,opacity:0},
+      {opacity:1,offset:.15},
+      {opacity:1,offset:.75},
+      {transform:`translate(${dx}px,${dy}px) rotate(${a}rad)`,opacity:0}
+    ],{duration:3200,easing:'cubic-bezier(.4,0,.8,1)'});
+    const done=()=>{el.remove();busy=false;};
+    anim.onfinish=done;
+    el.addEventListener('click',()=>{anim.cancel();done();wish.hidden=false;document.getElementById('wishBtn').focus();});
+  }
+  setInterval(shoot,6500);
+  setTimeout(shoot,2500);
+  document.getElementById('wishClose').addEventListener('click',()=>{wish.hidden=true;});
+  document.getElementById('wishBtn').addEventListener('click',()=>{wish.hidden=true;document.getElementById('picked').textContent='Dorința ta: o masă la Violet. Spune-ne asta când suni.';});
+})();
+
+/* ===== Paharul ===== */
+(function(){
+  const btn=document.getElementById('lemonBtn'),g=document.getElementById('glassSvg'),note=document.getElementById('glassNote');
+  let on=false;
+  btn.addEventListener('click',()=>{
+    on=!on; g.classList.toggle('lemon',on);
+    btn.textContent=on?'Încă o dată':'Adaugă lămâia';
+    note.textContent=on?'Gata. Asta e Limonada Violet.':'Butterfly pea e albastru. Până întâlnește lămâia.';
+  });
+})();
+
+/* ===== Copiază numărul ===== */
+document.getElementById('copyBtn').addEventListener('click',()=>{
+  const out=document.getElementById('copied'),num='0756 854 086';
+  const fallback=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('phoneNum'));const s=getSelection();s.removeAllRanges();s.addRange(r);out.textContent='Numărul e selectat. Copiază-l cu Ctrl+C.';};
+  try{navigator.clipboard.writeText(num).then(()=>{out.textContent='Copiat.';},fallback);}catch(e){fallback();}
+});
+</script>
+</body>
+</html>
